@@ -3,28 +3,24 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".orangeWrapper",
+      trigger: ".circle",
       scrub: true,
       pin: true,
-
-      start: "50% 50%",
-      end: "+=200%",
+      start: "0% 0%",
+      end: "+=0%",
+      duration: 5,
     },
   })
 
-  .from(".orange", {
-    scale: 0.5,
-    ease: "none",
+  .from(".circle", {
+    scale: 1,
+    ease: "ease",
+    duration: 1,
   })
-
-  .from(
-    ".line-2",
-    {
-      scaleX: 0,
-      ease: "none",
-      transformOrigin: "left top",
-    },
-    0
-  );
-
+  .to(".circle", {
+    scale: 10,
+    ease: "ease",
+    duration: 1,
+  });
+tl.reverse();
 export { tl };
