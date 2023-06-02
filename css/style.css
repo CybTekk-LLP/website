@@ -51,6 +51,13 @@ h2.big {
     opacity: 10%;
 }
 
+h3.subtagline {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
 p {
     color: #fafffd;
     font-family: "Merriweather Sans", sans-serif;
@@ -506,7 +513,7 @@ section {
     -webkit-text-fill-color: transparent;
     background-attachment: fixed; */
     position: absolute;
-    top: 50%;
+    top: 150vh;
     -webkit-transform: translateY(-100%) translate3d(0, 0, 0);
     ;
     -moz-transform: translateY(-100%) translate3d(0, 0, 0);
@@ -556,17 +563,19 @@ section {
     }
 }
 
-#about {
+#about,
+#services {
     position: relative;
 }
 
-#about h1 {
+#about h1,
+#services h1 {
     width: 60vw;
     margin: 0 auto;
     padding-bottom: 4rem;
 }
 
-#about .article-container {
+.article-container {
     display: flex;
     width: 60vw;
     margin: auto;
@@ -579,6 +588,16 @@ section {
 .left-article {
     padding-right: 2em;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (orientation:portrait) {
     .hide-on-phone {
