@@ -37,7 +37,8 @@ h1 {
     text-align: left;
     color: var(--white);
     line-height: 1.2;
-    font-size: 3vw;
+    font-size: calc(12px + 2vw);
+
 }
 
 h2.big {
@@ -49,12 +50,14 @@ h2.big {
     text-transform: capitalize;
     color: var(--platinum);
     opacity: 10%;
+    pointer-events: none;
 }
 
 h3.subtagline {
     font-family: "Merriweather Sans", sans-serif;
-    font-weight: 300;
-    font-size: 36px;
+    font-weight: 600;
+    color: var(--white);
+    font-size: calc(12px + 1vw);
     text-transform: capitalize;
 }
 
@@ -407,6 +410,17 @@ section {
     display: flex;
 }
 
+button {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 300;
+    font-size: calc(0.5vw + 1.2rem);
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
 .left {
     float: left;
     vertical-align: middle;
@@ -564,15 +578,31 @@ section {
 }
 
 #about,
-#services {
+#services,
+#industries,
+#products,
+#proficiencies,
+#careers,
+#contact {
     position: relative;
 }
 
 #about h1,
-#services h1 {
+#services h1,
+#industries h1,
+#industries h3,
+#products h1,
+#proficiencies h1,
+#careers h1,
+#contact h1 {
     width: 60vw;
     margin: 0 auto;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
+}
+
+#industries h3 {
+    padding-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .article-container {
@@ -589,10 +619,68 @@ section {
     padding-right: 2em;
 }
 
+.space {
+    display: block;
+    margin: 1rem;
+}
+
+#services .left-article button,
+#industries .left-article button,
+#products .left-article button,
+#careers .left-article button,
+#contact .left-article button {
+    display: block;
+    margin: 1.2rem;
+}
+
+.button-gradient {
+    display: block;
+    color: transparent;
+    background: -webkit-linear-gradient(to right, var(--pink) 0%, var(--blue) 25%, var(--pink) 50%, var(--blue) 75%, var(--pink) 100%);
+    background: linear-gradient(to right, var(--pink) 0%, var(--blue) 25%, var(--pink) 50%, var(--blue) 75%, var(--pink) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+
+.button-gradient span {
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+.button-gradient:hover span {
+    margin-left: 2px;
+    margin-right: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+.button-gradient:hover {
+    animation: gradientMove 0.8s ease-in-out 2;
+    -moz-animation: gradientMove 0.8s ease-in-out 2;
+    -webkit-animation: gradientMove 0.8s ease-in-out 2;
+    -o-animation: gradientMove 0.8s ease-in-out 2;
+    cursor: pointer;
+}
 
 
+@keyframes gradientMove {
+    0% {
+        background-position: left
+    }
 
-
+    100% {
+        background-position: right
+    }
+}
 
 
 
@@ -600,7 +688,52 @@ section {
 
 
 @media screen and (orientation:portrait) {
+
+    /* tablet */
+    .article-container {
+        flex-direction: column;
+    }
+
+    .right-article {
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width:760px) {
+
+    /* mobile */
     .hide-on-phone {
         display: none;
+    }
+
+    #about h1,
+    #services h1,
+    #industries h1,
+    #industries h3,
+    #products h1,
+    #proficiencies h1,
+    #careers h1,
+    #contact h1 {
+        width: 80vw;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    #industries h3 {
+        padding-bottom: 0.5rem;
+    }
+
+    .article-container {
+        display: flex;
+        width: 80vw;
+        margin: auto;
+        text-align: left;
+    }
+
+    .left-article {
+        padding-right: 0;
     }
 }
