@@ -727,6 +727,8 @@ button {
     margin: 0% 1%;
 }
 
+
+
 @media screen and (orientation:portrait) {
 
     /* tablet */
@@ -779,7 +781,7 @@ button {
 
     .footer {
         text-align: left;
-        padding: 5%;
+        padding: 10%;
     }
 
     .footer .row ul li {
