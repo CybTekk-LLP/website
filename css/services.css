@@ -1,0 +1,18 @@
+.content {
+    top: 50vh !important;
+}
+
+.logo {
+    padding: 2rem;
+}
+
+.logo img {
+    position: fixed;
+    height: 4rem;
+    width: auto;
+    z-index: 4;
+}
+
+.background-text {
+    font-size: 15vmin;
+}

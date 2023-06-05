@@ -1,2 +1,0 @@
-const tl = {};
-export { tl };

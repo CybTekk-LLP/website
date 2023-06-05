@@ -1,15 +1,15 @@
 import { menu } from "./menu.mjs";
-import { tl } from "./timeline.mjs";
+import { looper } from "./skew.mjs";
 import { animateSequence, animateRandom } from "./fly.mjs";
 import { big, big2 } from "./translate-on-scroll.mjs";
 menu(); // toggle menu
-tl;
-window.onload = function () {
+looper();
+window.addEventListener("load", function () {
   animateSequence();
   animateRandom();
-};
+});
 
-window.onscroll = function () {
+window.addEventListener("scroll", () => {
   big();
   big2();
-};
+});
