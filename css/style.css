@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
 }
 
 html,
@@ -682,10 +683,49 @@ button {
     }
 }
 
+.rev {
+    direction: rtl;
+    left: -400%
+}
 
 
+.footer {
+    padding: 30px 0px;
+    font-family: "Merriweather Sans", sans-serif;
+    text-align: center;
+}
 
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: var(--platinum);
+    font-size: 0.8em;
+}
 
+.footer .row a {
+    text-decoration: none;
+    color: var(--platinum);
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: var(--white);
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
 
 @media screen and (orientation:portrait) {
 
@@ -735,5 +775,20 @@ button {
 
     .left-article {
         padding-right: 0;
+    }
+
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
     }
 }
