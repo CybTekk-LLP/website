@@ -73,7 +73,7 @@ h3.subtagline {
 }
 
 p,
-span {
+span.hide-on-phone {
     color: #fafffd;
     font-family: "Merriweather Sans", sans-serif;
     line-height: 2;
@@ -84,7 +84,7 @@ span {
     background: var(--black);
     height: 100%;
     left: 0;
-    opacity: 0;
+    opacity: 50%;
     overflow: hidden;
     position: fixed;
     text-align: center;
