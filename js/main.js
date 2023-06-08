@@ -8,7 +8,6 @@ window.addEventListener("load", function () {
   animateSequence();
   animateRandom();
 });
-
 window.addEventListener("scroll", () => {
   big();
   big2();

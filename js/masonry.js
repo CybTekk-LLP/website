@@ -3,7 +3,6 @@ var colWidth = $(".card").width();
 window.onresize = function () {
   var colWidth = $("card").width();
 };
-console.log(colWidth);
 
 var $grid = $(".container").masonry({
   // options

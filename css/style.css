@@ -649,6 +649,10 @@ button {
     margin: 1.2rem;
 }
 
+.left-article a {
+    text-decoration: none;
+}
+
 .button-gradient {
     display: block;
     color: transparent;
@@ -700,7 +704,7 @@ button {
 
 .rev {
     direction: rtl;
-    left: -450%
+    left: -1000%
 }
 
 

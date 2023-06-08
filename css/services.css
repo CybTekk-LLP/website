@@ -11,12 +11,13 @@
 }
 
 .content {
-    top: 60vh !important;
+    top: 50vh !important;
 }
 
 .logo {
     padding: 2rem;
 }
+
 
 .logo img {
     position: fixed;
@@ -156,6 +157,24 @@ p.detail {
     visibility: visible;
     opacity: 1;
 }
+
+
+.phone-animation {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+
+}
+
+.phone-animation img {
+    padding: 50px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+
 
 
 /* GENERAL MEDIA QUERIES
