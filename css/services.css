@@ -21,13 +21,19 @@
 
 .logo img {
     position: fixed;
-    height: 4rem;
+    height: 3.5rem;
     width: auto;
     z-index: 4;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
+.logo img.is-active {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
 
-.button-gradient {
+.design-gradient {
     font-size: calc(0.5vw + 2rem);
     font-weight: bold;
     padding: 2rem 4rem;
@@ -165,16 +171,43 @@ p.detail {
     align-content: center;
     gap: 4px;
     grid-auto-flow: column;
-
+    overflow: hidden;
 }
 
 .phone-animation img {
     padding: 50px;
     grid-row-start: 1;
     grid-column-start: 1;
+    overflow: hidden;
 }
 
+.phone-animation img.shapes {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+}
 
+.phone-animation img.appear {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+}
+
+.phone-animation .design-gradient {
+    position: relative;
+    top: 80px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.phone-animation .design-gradient.lift-up {
+    top: 50px;
+    opacity: 1;
+}
 
 
 /* GENERAL MEDIA QUERIES
@@ -268,5 +301,14 @@ p.detail {
 
     100% {
         transform: translateX(-50%) scale(1);
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width:760px) {
+    .logo img {
+        position: fixed;
+        height: 2.5rem;
+        width: auto;
+        z-index: 4;
     }
 }
