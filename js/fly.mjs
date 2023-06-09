@@ -1,11 +1,11 @@
 function animateSequence() {
-  var a = document.getElementsByClassName("sequence");
-  for (var i = 0; i < a.length; i++) {
-    var $this = a[i];
-    var letter = $this.innerHTML;
+  let a = document.getElementsByClassName("sequence");
+  for (let i = 0; i < a.length; i++) {
+    let $this = a[i];
+    let letter = $this.innerHTML;
     letter = letter.trim();
-    var str = "";
-    var delay = 100;
+    let str = "";
+    let delay = 100;
     for (let l = 0; l < letter.length; l++) {
       if (letter[l] != " ") {
         str +=
@@ -26,24 +26,24 @@ function animateSequence() {
 }
 
 function animateRandom() {
-  var a = document.getElementsByClassName("random");
-  for (var i = 0; i < a.length; i++) {
-    var $this = a[i];
-    var letter = $this.innerHTML;
+  let a = document.getElementsByClassName("random");
+  for (let i = 0; i < a.length; i++) {
+    let $this = a[i];
+    let letter = $this.innerHTML;
     letter = letter.trim();
-    var delay = 70;
-    var delayArray = new Array();
-    var randLetter = new Array();
+    let delay = 70;
+    let delayArray = new Array();
+    let randLetter = new Array();
     for (j = 0; j < letter.length; j++) {
       while (1) {
-        var random = getRandomInt(0, letter.length - 1);
+        let random = getRandomInt(0, letter.length - 1);
         if (delayArray.indexOf(random) == -1) break;
       }
       delayArray[j] = random;
     }
     for (let l = 0; l < delayArray.length; l++) {
-      var str = "";
-      var index = delayArray[l];
+      let str = "";
+      let index = delayArray[l];
       if (letter[index] != " ") {
         str =
           '<span style="animation-delay:' +

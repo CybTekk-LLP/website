@@ -1,6 +1,6 @@
 function isInViewport(element) {
   // Get the bounding client rectangle position in the viewport
-  var bounding = element.getBoundingClientRect();
+  let bounding = element.getBoundingClientRect();
 
   // Checking part. Here the code checks if it's *fully* visible
   // Edit this part if you just want a partial visibility

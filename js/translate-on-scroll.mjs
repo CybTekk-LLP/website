@@ -1,13 +1,13 @@
 let big = function () {
-  var titles = document.querySelectorAll(".big");
-  var scrollTop = document.documentElement.scrollTop * 0.5;
+  let titles = document.querySelectorAll(".big");
+  let scrollTop = document.documentElement.scrollTop * 0.5;
   for (let title of titles)
     title.style.transform = "translateX(-" + scrollTop + "px)";
 };
 
 let big2 = function () {
-  var titles = document.querySelectorAll(".rev");
-  var scrollTop = document.documentElement.scrollTop * 0.5;
+  let titles = document.querySelectorAll(".rev");
+  let scrollTop = document.documentElement.scrollTop * 0.5;
   for (let title of titles)
     title.style.transform = "translateX(+" + scrollTop + "px)";
 };

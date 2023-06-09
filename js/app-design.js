@@ -1,11 +1,11 @@
 import { isInViewport } from "./viewport.mjs";
 // Get the an HTML element
-var element = document.querySelector(".phone-animation");
+let element = document.querySelector(".phone-animation");
 // Get its bounding client rectangle
-var bounding = element.getBoundingClientRect();
+let bounding = element.getBoundingClientRect();
 
 let design = function () {
-  var titles = document.querySelectorAll(".phone-animation img");
+  let titles = document.querySelectorAll(".phone-animation img");
   for (let title of titles) {
     title.style.transform = "rotate(-" + 30 + "deg)";
     title.style.transition = "all 0.6s ease-in-out";
@@ -18,7 +18,7 @@ let design = function () {
   }
 };
 let undesign = function () {
-  var titles = document.querySelectorAll(".phone-animation img");
+  let titles = document.querySelectorAll(".phone-animation img");
   for (let title of titles) {
     title.style.transform = "rotate(" + 0 + "deg)";
     title.style.transition = "all 0.6s ease-in-out";

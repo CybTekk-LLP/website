@@ -1,10 +1,10 @@
-var colWidth = $(".card").width();
+let colWidth = $(".card").width();
 
 window.onresize = function () {
-  var colWidth = $("card").width();
+  let colWidth = $("card").width();
 };
 
-var $grid = $(".container").masonry({
+let $grid = $(".container").masonry({
   // options
   itemSelector: ".card",
   columnWidth: ".card",
