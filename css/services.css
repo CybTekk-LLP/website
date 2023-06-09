@@ -114,6 +114,7 @@ p.detail {
     background-image: linear-gradient(to right, var(--pink), var(--blue)) !important;
 }
 
+
 .timeline ul li div {
     visibility: hidden;
     opacity: 0;
@@ -197,17 +198,28 @@ p.detail {
     -o-transition: all 2s ease-in-out;
 }
 
-.phone-animation .design-gradient {
+.phone-animation .phone-animation-container {
+    padding-left: 40px;
     position: relative;
     top: 80px;
     opacity: 0;
     transition: all ease 0.5s;
 }
 
-.phone-animation .design-gradient.lift-up {
+.phone-animation .phone-animation-container.lift-up {
     top: 50px;
     opacity: 1;
 }
+
+.phone-animation .phone-animation-container .design-gradient {
+    padding-left: 0;
+    padding-bottom: 1rem;
+}
+
+.phone-animation .phone-animation-container .paragraph {
+    width: 40vw;
+}
+
 
 
 /* GENERAL MEDIA QUERIES

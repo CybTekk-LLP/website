@@ -209,7 +209,7 @@ function initMap() {
     backgroundColor: "hsla(0, 0%, 0%, 0)",
   });
 
-  google.maps.event.addDomListener(window, "resize", function () {
+  window.addEventListener("resize", function () {
     var center = map.getCenter();
     google.maps.event.trigger(map, "resize");
     map.setCenter(center);

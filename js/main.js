@@ -8,6 +8,7 @@ looper();
 window.addEventListener("load", function () {
   animateSequence();
   animateRandom();
+  initMap();
 });
 window.addEventListener("scroll", () => {
   big();
@@ -20,5 +21,3 @@ document.querySelectorAll(".main-nav ul li").forEach((link) => {
     document.querySelector(".ham").classList.remove("active");
   });
 });
-
-google.maps.event.addDomListener(window, "load", initMap);

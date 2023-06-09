@@ -4,12 +4,20 @@
     <defs>
         <polygon id="path-1" points="119.222 116.139 185 10.7917 100.722 0 0 31.8611 0 116.139 5.65278 225.083 185 225.083"></polygon>
         <linearGradient x1="-53.2743354%" y1="49.9394413%" x2="109.462736%" y2="49.706939%" id="linearGradient-3">
-            <stop stop-color="#30F5EA" offset="0%"></stop>
-            <stop stop-color="#E756FF" offset="100%"></stop>
+            <stop stop-color="#30F5EA" offset="0%">
+             <animate attributeName="stop-color" values="#30F5EA; #E756FF; #75BAF2; #9F96F7; #30F5EA" dur="10s" repeatCount="indefinite"></animate>
+            </stop>
+            <stop stop-color="#E756FF" offset="100%">
+             <animate attributeName="stop-color" values="#E756FF; #75BAF2; #9F96F7; #30F5EA; #E756FF" dur="10s" repeatCount="indefinite"></animate>
+            </stop>
         </linearGradient>
         <linearGradient x1="0.000347490079%" y1="50%" x2="100.000347%" y2="50%" id="linearGradient-4">
-            <stop stop-color="#75BAF2" offset="0%"></stop>
-            <stop stop-color="#9F96F7" offset="100%"></stop>
+            <stop stop-color="#75BAF2" offset="0%">
+             <animate attributeName="stop-color" values="#75BAF2; #9F96F7; #30F5EA; #E756FF; #75BAF2" dur="10s" repeatCount="indefinite"></animate>
+            </stop>
+            <stop stop-color="#9F96F7" offset="100%">
+             <animate attributeName="stop-color" values="#9F96F7; #30F5EA; #E756FF; #75BAF2; #9F96F7" dur="10s" repeatCount="indefinite"></animate>
+            </stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

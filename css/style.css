@@ -362,6 +362,7 @@ span.hide-on-phone {
     height: 100vh;
     position: fixed;
     pointer-events: none;
+    z-index: 4;
 }
 
 .background span {
@@ -389,6 +390,7 @@ span.hide-on-phone {
     -webkit-filter: blur(4em);
     -moz-filter: blur(4em);
     -o-filter: blur(4em);
+
 }
 
 .background span:nth-child(2) {
@@ -438,6 +440,11 @@ button {
     white-space: nowrap;
 }
 
+#home .left {
+    z-index: 2;
+    pointer-events: none;
+}
+
 .left {
     float: left;
     vertical-align: middle;
@@ -477,6 +484,28 @@ button {
     overflow: hidden !important;
 }
 
+.coral-container,
+canvas {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.coral-container {
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    background: transparent;
+    background-size: cover;
+    background-blend-mode: hard-light;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 50vh;
+    left: calc(80vw - 100px);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
 
 .cssanimation,
 .cssanimation span {
@@ -701,6 +730,7 @@ button {
     position: relative;
     border-radius: 30px;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: -webkit-radial-gradient(white, black);
     /* fixes safari bug */
 
 }
@@ -759,6 +789,19 @@ button {
 }
 
 @media screen and (orientation:portrait) and (max-width:760px) {
+    .coral-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    #home .left {
+        margin-top: 30vh;
+    }
+
+    #home .right .coral-container {
+        top: 70vh;
+        left: 50vw;
+    }
 
     /* mobile */
     .hide-on-phone {

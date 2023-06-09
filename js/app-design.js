@@ -13,7 +13,7 @@ let design = function () {
       .querySelector(".phone-animation img.shapes")
       .classList.add("appear");
     document
-      .querySelector(".phone-animation .design-gradient")
+      .querySelector(".phone-animation .phone-animation-container")
       .classList.add("lift-up");
   }
 };
@@ -26,7 +26,7 @@ let undesign = function () {
       .querySelector(".phone-animation img.shapes")
       .classList.remove("appear");
     document
-      .querySelector(".phone-animation .design-gradient")
+      .querySelector(".phone-animation .phone-animation-container")
       .classList.remove("lift-up");
   }
 };
