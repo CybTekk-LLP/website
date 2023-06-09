@@ -702,6 +702,7 @@ button {
     border-radius: 30px;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
     /* fixes safari bug */
+
 }
 
 .footer {
