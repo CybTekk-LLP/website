@@ -1,17 +1,23 @@
-const skewEm = document.querySelectorAll(".skewEm");
-let currentPixel = window.pageYOffset;
+// let proxy = { skew: 0 },
+//   skewSetter = gsap.quickSetter(".skewEm", "skewY", "deg"), // fast
+//   clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
 
-const looper = function () {
-  const newPixel = window.pageYOffset;
-  const diff = newPixel - currentPixel;
-  const speed = diff * 0.08;
+// ScrollTrigger.create({
+//   onUpdate: (self) => {
+//     let skew = clamp(self.getVelocity() / -300);
+//     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+//     if (Math.abs(skew) > Math.abs(proxy.skew)) {
+//       proxy.skew = skew;
+//       gsap.to(proxy, {
+//         skew: 0,
+//         duration: 0.8,
+//         ease: "power3",
+//         overwrite: true,
+//         onUpdate: () => skewSetter(proxy.skew),
+//       });
+//     }
+//   },
+// });
 
-  for (let skew of skewEm) {
-    skew.style.transition = "all 0.6s ease-in-out";
-    skew.style.transform = `skewY(${Math.min(Math.max(speed, -3), 3)}deg)`;
-  }
-  currentPixel = newPixel;
-
-  requestAnimationFrame(looper);
-};
-export { looper };
+// // make the right edge "stick" to the scroll bar. force3D: true improves performance
+// gsap.set(".skewEm", { transformOrigin: "right center", force3D: true });

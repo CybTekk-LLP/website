@@ -21,11 +21,29 @@ html,
 .body {
     overflow-x: hidden !important;
     position: relative;
-    scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
 }
 
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
 
 
 .skewEm {
@@ -502,7 +520,7 @@ canvas {
     backface-visibility: hidden;
     position: absolute;
     top: 50vh;
-    left: calc(80vw - 100px);
+    left: 50vw;
     transform: translate(-50%, -50%);
     z-index: 0;
 }
@@ -584,7 +602,7 @@ canvas {
     image-rendering: optimizeQuality;
     opacity: calc(1.5 - var(--from-center));
     filter: brightness(200%);
-
+    overflow: hidden;
 }
 
 @keyframes bg-animation {
@@ -798,10 +816,6 @@ canvas {
         margin-top: 30vh;
     }
 
-    #home .right .coral-container {
-        top: 70vh;
-        left: 50vw;
-    }
 
     /* mobile */
     .hide-on-phone {

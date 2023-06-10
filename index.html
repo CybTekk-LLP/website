@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script
         src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNvd1tHe6YJhKG2JS-8h06pZ531Ii3ZzI&callback=Function.prototype"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
 </head>
 
@@ -34,28 +35,28 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a href="#about">
+                    <a onclick="lenis.scrollTo('#about')" href="#about">
                         About
                     </a>
                 </li>
                 <li>
-                    <a href="#services">
+                    <a onclick="lenis.scrollTo('#services')" href="#services">
                         Services
                     </a>
                 </li>
 
                 <li>
-                    <a href="#industries">
+                    <a onclick="lenis.scrollTo('#industries')" href="#industries">
                         Industries
                     </a>
                 </li>
                 <li>
-                    <a href="#careers">
+                    <a onclick="lenis.scrollTo('#careers')" href="#careers">
                         Careers
                     </a>
                 </li>
                 <li>
-                    <a href="#contact">
+                    <a onclick="lenis.scrollTo('#contact')" href="#contact">
                         Contact
                     </a>
                 </li>
@@ -95,12 +96,12 @@
             </h1>
             <img src="svg/cybtekk_dark_background.svg" alt="" fetchpriority="high">
         </div>
+        <div class="right"></div>
 
-        <div class="right">
-            <div class="coral-container">
-                <canvas class="canvas" id="canvas"></canvas>
-            </div>
-        </div>
+        <!-- <div class="coral-container">
+            <canvas class="canvas" id="canvas"></canvas>
+
+        </div> -->
 
         </div>
     </section>
@@ -258,7 +259,8 @@
     </section>
 
     <section id="contact">
-        <h2 class="big" role="presentation">Contact - Lorem Ipsum Dolor Sit Amet deja vu</h2>
+        <h2 class="big" role="presentation">Contact - Lorem Ipsum Dolor Sit Amet deja vu Contact - Lorem Ipsum Dolor Sit
+            Amet deja vu Contact - Lorem Ipsum Dolor Sit Amet deja vu</h2>
         <h1 class="skewEm">Contact - Lorem Ipsum Dolor Sit Amet deja vu</h1>
         <div class="article-container">
             <p class="left-article">
@@ -307,11 +309,11 @@
 
             <div class="row">
                 <ul>
-                    <li><a href="#contact">Contact us</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#careers">Careers</a></li>
+                    <li><a onclick="lenis.scrollTo('#contact')" href="#contact">Contact us</a></li>
+                    <li><a onclick="lenis.scrollTo('#services')" href="#services">Our Services</a></li>
+                    <li><a onclick="lenis.scrollTo('#')" href="#">Privacy Policy</a></li>
+                    <li><a onclick="lenis.scrollTo('#')" href="#">Terms & Conditions</a></li>
+                    <li><a onclick="lenis.scrollTo('#careers')" href="#careers">Careers</a></li>
                 </ul>
             </div>
 
@@ -322,7 +324,12 @@
     </footer>
 
     <script src="./js/main.js" type="module"></script>
-    <script src="./js/coral-fur.js"></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+    <!-- <script src="./js/coral-fur.js"></script> -->
+    <script src="./js/lenis.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
