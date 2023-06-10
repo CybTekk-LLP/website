@@ -205,7 +205,7 @@ function initMap() {
   var myMarker = new google.maps.Marker({
     position: latlng,
     map: map,
-    title: "Cybtekk",
+    title: "CybTEKK",
     backgroundColor: "hsla(0, 0%, 0%, 0)",
   });
 

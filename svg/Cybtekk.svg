@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="185px" height="226px" viewBox="0 0 185 226" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>cybtekk_dark_background</title>
+    <title>CybTEKK_dark_background</title>
     <defs>
         <polygon id="path-1" points="119.222 116.139 185 10.7917 100.722 0 0 31.8611 0 116.139 5.65278 225.083 185 225.083"></polygon>
         <linearGradient x1="-53.2743354%" y1="49.9394413%" x2="109.462736%" y2="49.706939%" id="linearGradient-3">
@@ -21,7 +21,7 @@
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="cybtekk_dark_background">
+        <g id="CybTEKK_dark_background">
             <g id="Clipped">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
