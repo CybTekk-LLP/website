@@ -11,19 +11,19 @@ let big = function () {
 };
 
 let big2 = function () {
-  let titles = document.querySelectorAll(".rev");
+  let titles = document.querySelectorAll(".big-rev");
   let scrollTop = document.documentElement.scrollTop * 0.4;
   for (let title of titles) {
-    title.style.transition = "transform .6s cubic-bezier(.215,.61,.355,1)";
     title.style.transform = "translateX(+" + scrollTop + "px)";
+    title.style.transition = "transform .6s cubic-bezier(.215,.61,.355,1)";
   }
 };
 
 const skewEm = document.querySelectorAll(".skewEm");
-let currentPixel = window.pageYOffset;
+let currentPixel = window.scrollY;
 
 // const looper = function () {
-//   const newPixel = window.pageYOffset;
+//   const newPixel = window.scrollY;
 //   const diff = newPixel - currentPixel;
 //   const speed = diff * 0.08;
 //   for (let skew of skewEm) {
@@ -37,25 +37,29 @@ let currentPixel = window.pageYOffset;
 // SETUP LENIS
 const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {
-  big();
-  big2();
-});
-
 function raf(time) {
   lenis.raf(time);
-  //   const newPixel = window.pageYOffset;
-  //   const diff = newPixel - currentPixel;
-  //   const speed = diff * 0.08;
-  //   for (let skew of skewEm) {
-  //     skew.style.transition = "transform .6s cubic-bezier(.215,.61,.355,1)";
-  //     skew.style.transformOrigin = "50% 50%";
-  //     skew.style.transform = `skewY(${Math.min(Math.max(speed, -3), 3)}deg)`;
-  //   }
-  //   currentPixel = newPixel;
+  const newPixel = window.scrollY;
+  const diff = newPixel - currentPixel;
+  const speed = diff * 0.08;
+  for (let skew of skewEm) {
+    skew.style.transition = "transform .6s cubic-bezier(.215,.61,.355,1)";
+    skew.style.transformOrigin = "50% 50%";
+    skew.style.transform = `skewY(${Math.min(Math.max(speed, -3), 3)}deg)`;
+  }
+  currentPixel = newPixel;
   requestAnimationFrame(raf);
 }
 
 requestAnimationFrame(raf);
 
 // looper();
+
+lenis.on("scroll", (e) => {
+  big();
+  big2();
+});
+
+// gsap.ticker.add((time) => {
+//   lenis.raf(time * 1000);
+// });

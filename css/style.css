@@ -72,7 +72,8 @@ h1 {
 
 }
 
-h2.big {
+h2.big,
+h2.big-rev {
     font-family: "Della Respira", serif;
     position: absolute;
     top: -35%;
@@ -99,6 +100,34 @@ span.hide-on-phone {
     line-height: 2;
     font-weight: 200;
 }
+
+.circle {
+    position: absolute !important;
+    aspect-ratio: 1 / 1;
+    width: 120vh;
+    border: 10px solid rgb(44, 44, 44);
+    border-radius: 1000vh;
+    z-index: -1;
+}
+
+.circle-1 {
+    top: -10vh;
+    right: -70vh;
+}
+
+.circle-2 {
+    width: 90vh;
+    top: 5vh;
+    right: -55vh;
+}
+
+.circle-3 {
+    width: 60vh;
+    top: 20vh;
+    right: -40vh;
+    background: rgb(44, 44, 44);
+}
+
 
 #menu {
     background: rgba(20, 20, 20, 0.9);
@@ -186,6 +215,7 @@ span.hide-on-phone {
 
 #menu ul:hover a {
     opacity: 0.5;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 #menu ul a {
@@ -256,12 +286,13 @@ span.hide-on-phone {
     color: var(--platinum);
     text-decoration: none;
     text-transform: uppercase;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 .toggle-menu {
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
     display: inline-block;
     right: 0;
     height: 100px;
@@ -276,7 +307,7 @@ span.hide-on-phone {
 }
 
 .ham {
-    cursor: pointer;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
     width: 70px;
     -webkit-tap-highlight-color: transparent;
     -moz-user-select: none;
@@ -371,9 +402,9 @@ span.hide-on-phone {
     transform: translateX(5px);
 }
 
-.ham.active {
+/* .ham.active {
     background-image: linear-gradient(to right, var(--pink), var(--blue)) !important;
-}
+} */
 
 .background {
     width: 100vw;
@@ -447,6 +478,10 @@ section {
     display: flex;
 }
 
+#design {
+    min-height: 40vh
+}
+
 button {
     font-family: "Merriweather Sans", sans-serif;
     font-weight: 300;
@@ -470,8 +505,14 @@ button {
     padding-left: 10%;
 }
 
-.left img {
-    width: 80%;
+.anime {
+    position: relative;
+}
+
+.anime svg {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
 }
 
 .left h1 {
@@ -541,10 +582,10 @@ canvas {
 
 @keyframes leFlyInBottom {
     0% {
-        -webkit-transform: translate(0px, 80px);
-        -moz-transform: translate(0px, 80px);
-        -o-transform: translate(0px, 80px);
-        transform: translate(0px, 80px);
+        -webkit-transform: translate(0px, -50px);
+        -moz-transform: translate(0px, -50px);
+        -o-transform: translate(0px, -50px);
+        transform: translate(0px, -50px);
         opacity: 0
     }
 
@@ -564,20 +605,16 @@ canvas {
     font-size: 12vmin;
     width: 80vw;
     margin: 0 10vw;
-    /* background: -webkit-linear-gradient(#ac53f1, #3b82d5, #ac53f1);
+    background: -webkit-linear-gradient(#ac53f1, #3b82d5, #ac53f1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-attachment: fixed; */
+    background-attachment: fixed;
     position: absolute;
-    top: 150vh;
-    -webkit-transform: translateY(-100%) translate3d(0, 0, 0);
-    ;
+    top: 100vh;
+    /* -webkit-transform: translateY(-100%) translate3d(0, 0, 0);
     -moz-transform: translateY(-100%) translate3d(0, 0, 0);
-    ;
     -o-transform: translateY(-100%) translate3d(0, 0, 0);
-    ;
-    transform: translateY(-100%) translate3d(0, 0, 0);
-    ;
+    transform: translateY(-100%) translate3d(0, 0, 0); */
 }
 
 /* .background-text {
@@ -589,11 +626,9 @@ canvas {
 .background-text {
     text-transform: uppercase;
     color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     background-image: url("../images/gradient.jpg");
     background-size: 150%;
+    background-attachment: fixed;
     -webkit-animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
     -moz-animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
     -o-animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
@@ -602,7 +637,13 @@ canvas {
     image-rendering: optimizeQuality;
     opacity: calc(1.5 - var(--from-center));
     filter: brightness(200%);
-    overflow: hidden;
+    transform-style: flat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 17rem;
 }
 
 @keyframes bg-animation {
@@ -702,7 +743,7 @@ canvas {
 .design-gradient:hover span {
     margin-left: 2px;
     margin-right: 0;
-    cursor: pointer;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -714,7 +755,7 @@ canvas {
     -moz-animation: gradientMove 0.8s ease-in-out 2;
     -webkit-animation: gradientMove 0.8s ease-in-out 2;
     -o-animation: gradientMove 0.8s ease-in-out 2;
-    cursor: pointer;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 
@@ -728,7 +769,7 @@ canvas {
     }
 }
 
-.rev {
+.big-rev {
     direction: rtl;
     left: -1000%
 }
@@ -771,6 +812,7 @@ canvas {
     text-decoration: none;
     color: var(--platinum);
     transition: 0.5s;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 .footer .row a:hover {
@@ -784,6 +826,7 @@ canvas {
 .footer .row ul li {
     display: inline-block;
     margin: 0px 30px;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 .footer .row a i {
@@ -804,6 +847,12 @@ canvas {
         padding-left: 0;
         padding-top: 1rem;
     }
+
+    .anime svg {
+        width: 400px;
+        height: 140px;
+
+    }
 }
 
 @media screen and (orientation:portrait) and (max-width:760px) {
@@ -814,6 +863,15 @@ canvas {
 
     #home .left {
         margin-top: 30vh;
+    }
+
+    .anime svg {
+        width: 300px;
+        height: 110px;
+    }
+
+    .leFlyInBottom * {
+        font-size: 1.5rem;
     }
 
 
@@ -880,4 +938,83 @@ canvas {
     .footer .row a i {
         margin: 0% 3%;
     }
+}
+
+
+
+#design {
+    height: 100vh;
+}
+
+#about {
+    margin-top: 30vh;
+}
+
+.tagline-wrapper {
+    background: linear-gradient(to bottom, #2c2c2c, var(--black));
+    height: 100vh;
+}
+
+.tagline-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tagline-content .tagline-text {
+    width: 60%;
+    color: white;
+    position: relative;
+    font-family: "Work Sans", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .tagline-content .tagline-text {
+        width: 60%;
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tagline-content .tagline-text {
+        width: 80%;
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+}
+
+.tagline-content .tagline-text .tagline-highlight {
+    font-family: "Merriweather Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .tagline-content .tagline-text .tagline-highlight {
+        font-size: 2.5rem;
+    }
+}
+
+.tagline-content .tagline-text .tagline-gradient {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: #3d3d3d;
+    mix-blend-mode: darken;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.tagline-content .tagline-text .tagline-gradient img {
+    width: 100%;
+    height: 175vh;
+    filter: blur(100px);
 }
