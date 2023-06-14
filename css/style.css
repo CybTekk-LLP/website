@@ -720,12 +720,13 @@ canvas {
     margin: 1rem;
 }
 
+#services .left-article button,
 #industries .left-article button,
 #products .left-article button,
 #careers .left-article button,
 #contact .left-article button {
     display: block;
-    margin: 1.2rem;
+    margin-left: 1.2rem;
 }
 
 .left-article a {
@@ -1037,7 +1038,15 @@ canvas {
 .service_desc {}
 
 @media screen and (orientation: landscape) {
-    .left-article {
-        width: 460%;
+    #about .left-article {
+        width: 320%;
+    }
+
+    #services .left-article {
+        width: 450%;
+    }
+
+    #industries .left-article h3 {
+        width: 30rem;
     }
 }
