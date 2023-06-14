@@ -46,6 +46,7 @@ timeline.fromTo(
   },
   "<"
 );
+let circle = document.querySelector(".circle");
 window.addEventListener("resize", function () {
   scrollTrigger.refresh();
 });
