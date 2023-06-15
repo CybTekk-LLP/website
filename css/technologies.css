@@ -1,0 +1,50 @@
+.techcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.techcard {
+    height: max-content;
+    width: max-content;
+    padding: 40px;
+    background-color: black;
+    text-align: left;
+    border-radius: 30px;
+    margin: 30px;
+    width: 35vw;
+    min-width: 450px
+}
+
+.techcard p {
+    text-align: left;
+}
+
+.techcard h1 {
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: left !important;
+    padding-left: 0;
+    padding-bottom: 1rem;
+}
+
+.techcard img {
+    height: 50px;
+    width: auto;
+    padding-left: 10px;
+}
+
+@media screen and (orientation:portrait) and (max-width: 760px) {
+    .techcard {
+        min-width: 80%
+    }
+
+    .techcard img {
+        height: 35px;
+        width: auto;
+        padding-left: 10px;
+    }
+}
