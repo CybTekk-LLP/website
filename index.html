@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="CSvBLTW_kqKVLHTSd74LLR9WVs8ZSo3Cz1bVpLshIFY" />
     <title>CybTEKK</title>
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <!-- <script
         src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNvd1tHe6YJhKG2JS-8h06pZ531Ii3ZzI&callback=Function.prototype"></script> -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PCD29N2');</script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "cybtekk",
+          "url": "https://cybtekk.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
 </head>
 
 <body class="body">
@@ -35,66 +52,67 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a onclick="lenis.scrollTo('#home')" href="#home">
+                    <a class="close-nav" onclick="lenis.scrollTo('#home')" href="#home">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a onclick="lenis.scrollTo('#about')" href="#about">
+                    <a class="close-nav" onclick="lenis.scrollTo('#about')" href="#about">
                         About
                     </a>
                 </li>
 
                 <li>
-                    <a class="nest-header" onclick="lenis.scrollTo('#services')" href="#services">
-                        Engagement Models
-                    </a>
-                    <ul class="nested-li">
-                        <a href="./pages/tekkevolve.html" target="_blank">
-                            <li>Tekk Evolve</li>
-                        </a>
-                        <a href="./pages/appconceptify.html" target="_blank">
-                            <li>App Conceptify</li>
-                        </a>
-                        <a href="./pages/talentbridge.html" target="_blank">
-                            <li>Talent Bridge</li>
-                        </a>
-                    </ul>
+
+                    <details>
+                        <summary>Engagement Models&nbsp;</summary>
+                        <p>
+                        <ul class="nested-li">
+                            <a class="close-nav" onclick="lenis.scrollTo('#services')" href="#services">
+                                Explore Models
+                            </a>
+                            <a href="./pages/tekkevolve.html">
+                                <li class="close-nav">Tekk Evolve</li>
+                            </a>
+                            <a href="./pages/appconceptify.html">
+                                <li class="close-nav">App Conceptify</li>
+                            </a>
+                            <a href="./pages/talentbridge.html">
+                                <li class="close-nav">Talent Bridge</li>
+                            </a>
+                        </ul>
+                        </p>
+                    </details>
+
                 </li>
+
                 <li>
-                    <a onclick="lenis.scrollTo('#proficiencies')" href="#proficiencies">
+                    <a class="close-nav" href="./pages/technologies.html">
                         Technologies
                     </a>
                 </li>
                 <li>
-                    <a class="nest-header" onclick="lenis.scrollTo('#industries')" href="#industries">
+                    <a class="close-nav" onclick="lenis.scrollTo('#industries')" href="#industries">
                         Industries
                     </a>
-
-                    <ul class="nested-li">
-                        <a href="./pages/industries.html" target="_blank">
-                            <li><span>Agriculture</span> | <span>Education</span> | <span>Energy & Utilities</span></li>
-                            <li><span>Financial</span> | <span>Healthcare & Medical</span> | <span>Hospitality</span>
-                            </li>
-                            <li><span>Legal & Law Practices</span> | <span>Manufacturing</span> | <span>Media &
-                                    Entertainment</span></li>
-                            <li><span>Retail</span> | <span>Real Estate</span> | <span>Travel & Logistics</span></li>
-                        </a>
-                    </ul>
-
                 </li>
                 <li>
-                    <a onclick="lenis.scrollTo('#products')" href="#products">
+                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="#products">
                         Products
                     </a>
                 </li>
                 <li>
-                    <a onclick="lenis.scrollTo('#careers')" href="#careers">
+                    <a class="close-nav" href="https://blog.cybtekk.com" target="_blank">
+                        Blogs
+                    </a>
+                </li>
+                <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#careers')" href="#careers">
                         Careers
                     </a>
                 </li>
                 <li>
-                    <a onclick="lenis.scrollTo('#contact')" href="#contact">
+                    <a class="close-nav" onclick="lenis.scrollTo('#contact')" href="#contact">
                         Contact
                     </a>
                 </li>
@@ -219,7 +237,7 @@
                     <span class="tagline-highlight"> next gen digital ecosystems </span>
 
                     <div class="tagline-gradient">
-                        <img src="./images/gradient.png" id="textMask" />
+                        <img src="./images/gradient.png" id="textMask" style="image-rendering: optimizeQuality;" />
                     </div>
                 </div>
             </div>
@@ -228,7 +246,7 @@
 
     <section id="about">
         <h2 class="big" role="presentation">A Next-Gen Digital&nbsp;Agency</h2>
-        <h1 class="skewEm design-gradient">About CybTEKK
+        <h1 class="skewEm design-gradient">ABOUT CybTEKK
         </h1>
         <div class="article-container skewEm">
             <h3 class="left-article  subtagline">
@@ -253,17 +271,17 @@
         <!-- <h3 class="subtagline">Flexible Pathways To Success</h3> -->
         <div class="article-container">
             <div class="left-article">
-                <a href="./pages/tekkevolve.html" target="_blank"><button class="design-gradient skewEm">Tekk Evolve
+                <a href="./pages/tekkevolve.html"><button class="design-gradient skewEm">Tekk Evolve
                         <span>&#10095;</span></button></a>
                 <p class="service_desc">Hire a team of professionals who work just as you would like to</p>
-                <a href="./pages/appconceptify.html" target="_blank"><button class="design-gradient skewEm">App
+                <a href="./pages/appconceptify.html"><button class="design-gradient skewEm">App
                         Conceptify <span>&#10095;</span></button></a>
                 <p class="service_desc">Revolutionise your digital experiences with the help of the team of experts at
                     CybTEKK
 
                 </p>
 
-                <a href="./pages/talentbridge.html" target="_blank"><button class="design-gradient skewEm">Talent Bridge
+                <a href="./pages/talentbridge.html"><button class="design-gradient skewEm">Talent Bridge
                         <span>&#10095;</span></button></a>
                 <p class="service_desc">Want to explore an app idea? Lets prototype it together</p>
 
@@ -276,23 +294,24 @@
                     A technological revolution is upon us, let us help your business stay ahead of the curve</span>.
             </p>
         </div>
+        <br>
+        <br><br>
     </section>
 
 
     <section id="industries">
-        <h2 class="big" role="presentation"> Unveiling Strategies for Thriving in the New Era
-            Unveiling Strategies for Thriving in the New Era
-            Unveiling Strategies for Thriving in the New Era
-            Unveiling Strategies for Thriving in the New Era
+        <h2 class="big" role="presentation"> Strategies to Thrive in the new ageStrategies to Thrive in the new age
+            Strategies to Thrive in the new age Strategies to Thrive in the new age Strategies to Thrive in the new age
+            Strategies to Thrive in the new age
         </h2>
         <h1 class="skewEm design-gradient">Industries
         </h1>
 
         <div class="article-container">
             <div class="left-article">
-                <h3 class="subtagline skewEm"> Unveiling Strategies for Thriving in the New Era
+                <h3 class="subtagline skewEm"> Strategies to Thrive in the new age
                 </h3>
-                <a href="./pages/industries.html" target="_blank"><button class="design-gradient skewEm">Explore
+                <a href="./pages/industries.html"><button class="design-gradient skewEm">Explore
                         Industries <span>&#10095;</span></button></a>
             </div>
             <p class="right-article skewEm">
@@ -333,12 +352,12 @@
         </div>
     </section> -->
     <section id="proficiencies">
-        <h2 class="big" role="presentation"> Technologies eb and flow, we ensure that we stay ahead of the trend and
+        <h2 class="big-rev" role="presentation"> Technologies eb and flow, we ensure that we stay ahead of the trend and
             embrace technological
             innovations as they come. We at CybTEKK like to take pride in our code, we always stay ahead following
             the best practices and standards. Every project is unique, therefore with each project we evaluate which
             tech stack best suits the task at hand. </h2>
-        <h1 class="skewEm design-gradient">Technolo&shy;gies</h1>
+        <h1 class="skewEm design-gradient">Technologies</h1>
         <div class="article-container">
             <p class="left-article skewEm">
                 Technologies eb and flow, we ensure that we stay ahead of the trend and embrace technological
@@ -350,6 +369,14 @@
             <p class="right-article">
 
             </p>
+        </div>
+        <div>
+            <!-- <img src="./images/Band.avif" class="big" alt="" height="150px" role="presentation"> -->
+        </div>
+        <div class="send-a-message">
+            <p>Send us an email on:</p>
+            <h3 class="subtagline email"><a class="design-gradient"
+                    href='mailto:hello@cybtekk.com'>hello@cybtekk.com</a></h3>
         </div>
     </section>
 
@@ -402,10 +429,6 @@
         </div> -->
 
     <footer>
-        <div class="send-a-message">
-            <p>Send us an email on:</p>
-            <h3 class="subtagline">hello@cybtekk.com</h3>
-        </div>
         <div class="footer">
             <div class="row">
                 <ul>
@@ -422,8 +445,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="./svg/linkedin.svg" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/company/cybtekk/mycompany/?viewAsMember=true" target="_blank">
+                            <img src="../svg/linkedin.svg" alt="LinkedIn">
 
                         </a>
                     </li>
@@ -440,8 +463,10 @@
                 </ul>
             </div>
 
-            <div class="row">
-                CybTEKK Copyright © 2023 - All rights reserved
+            <div class="row" id="insert-year">
+                CybTEKK Copyright ©
+                <script>document.getElementById('insert-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                - All rights reserved
             </div>
         </div>
     </footer>
@@ -458,6 +483,9 @@
     <script src="./js/anime.js"></script>
     <script src="./js/tagline.js" defer></script>
     <script src="./js/reload.js"></script>
+    <!-- Google Tag Manager (noscript) --> <noscript><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PCD29N2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>

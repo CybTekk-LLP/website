@@ -35,28 +35,68 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a href="../index.html#about">
-                        About
+                    <a class="close-nav" onclick="lenis.scrollTo('#home')" href="../index.html#home">
+                        Home
                     </a>
                 </li>
                 <li>
-                    <a href="../index.html#services">
-                        Services
+                    <a class="close-nav" onclick="lenis.scrollTo('#about')" href="../index.html#about">
+                        About
                     </a>
                 </li>
 
                 <li>
-                    <a href="../index.html#industries">
+
+                    <details>
+                        <summary>Engagement Models&nbsp;</summary>
+                        <p>
+                        <ul class="nested-li">
+                            <a class="close-nav" onclick="lenis.scrollTo('#services')" href="../index.html#services">
+                                Explore Models
+                            </a>
+                            <a href="../pages/tekkevolve.html">
+                                <li class="close-nav">Tekk Evolve</li>
+                            </a>
+                            <a href="../pages/appconceptify.html">
+                                <li class="close-nav">App Conceptify</li>
+                            </a>
+                            <a href="../pages/talentbridge.html">
+                                <li class=" close-nav">Talent Bridge
+                                </li>
+                            </a>
+                        </ul>
+                        </p>
+                    </details>
+
+                </li>
+
+                <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#proficiencies')" href="../index.html#proficiencies">
+                        Technologies
+                    </a>
+                </li>
+                <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#industries')" href="../index.html#industries">
                         Industries
                     </a>
                 </li>
                 <li>
-                    <a href="../index.html#careers">
+                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="../index.html#products">
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a class="close-nav" href="https://blog.cybtekk.com" target="_blank">
+                        Blogs
+                    </a>
+                </li>
+                <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#careers')" href="../index.html#careers">
                         Careers
                     </a>
                 </li>
                 <li>
-                    <a href="../index.html#contact">
+                    <a class="close-nav" onclick="lenis.scrollTo('#contact')" href="../index.html#contact">
                         Contact
                     </a>
                 </li>
@@ -67,19 +107,19 @@
             <nav class="footer-nav">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="https://twitter.com/CybTEKK_" target="_blank">
                             <img src="../svg/twitter.svg" alt="Twitter">
 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/CybTEKK/" target="_blank">
                             <img src="../svg/instagram.svg" alt="Instagram">
 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/cybtekk/mycompany/?viewAsMember=true" target="_blank">
                             <img src="../svg/linkedin.svg" alt="LinkedIn">
 
                         </a>
@@ -97,27 +137,27 @@
 
     <section id="industries">
         <h2 class="big" role="presentation">Industries That Can't Afford to Miss Out on IT Services</h2>
-        <h1 class="skewEm">Level Up Your Business with CybTEKK - Industries That Can't Afford to Miss Out on IT Services
+        <h1 class="skewEm"> Unveiling Strategies for Thriving in the New Era
         </h1>
-        <h3 class="subtagline skewEm">Reshaping These Industries with CybTEKK for Unprecedented Growth!
-        </h3>
+        <!-- <h3 class="subtagline skewEm">Reshaping These Industries with CybTEKK for Unprecedented Growth!
+        </h3> -->
         <div class="article-container">
             <p class="left-article skewEm">
-                We have many years of experience and offer
-                superior IT services to many industries and thousands
-                of businesses. In order to deliver a high level of
-                personalised service that minimises downtime,
-                maximises productivity, and evens the playing field
-                with the market leaders, our team makes use of
-                industry-specific knowledge.
+                We at CybTEKK understand that each industry has it’s own intricacies and special requirements that need
+                to be addressed and cared for, as pure technologists at heart, we specialise in identifying and
+                unveiling patterns, insights and strategies in various industries which cater to these intricacies. A
+                technological revolution is upon us, let us help your business stay ahead of the curve.
+
             </p>
-            <p class="right-article skewEm">
+            <!-- <p class="right-article skewEm hide-on-phone">
                 We aim to provide your business with the most necessary, advantageous
                 technology in your industry. Staying competitive is key, and the best way
                 to do that in today’s tech-driven business environment is to have a team
                 of IT experts in your back pocket.
-            </p>
+            </p> -->
         </div>
+        <br>
+        <br>
     </section>
     <section id="cards">
         <div class="container">
@@ -126,9 +166,9 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Agriculture</h2>
-                        <p>We provide a distinctive method for developing premium digital agritech goods that assist you
-                            scale and streamlining your farming operations through our assortment of agriculture custom
-                            software development services.</p>
+                        <p>The primary industrial sector is ripe for revolution with technology, we offer curated
+                            solutions to bring your agritech business to industry 4.0
+                        </p>
                     </div>
                 </div>
                 <div class="face face2">
@@ -143,11 +183,10 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Education</h2>
-                        <p>Today, Learning is not just limited to books. Books and other traditional media are being
-                            replaced over time by apps and websites.
-                            Along with this, students and teachers are looking out for customized services that are
-                            convenient for them and available on any
-                            device.
+                        <p>Education is not just about books and papers anymore, education is at the forefront of
+                            experiencing one of the largest technological advancements in history, let’s ensure you stay
+                            ahead of the curve.
+
                         </p>
                     </div>
                 </div>
@@ -162,14 +201,12 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Energy & Utilities</h2>
-                        <p>The real-time access and visibility into inventories,
-                            logistics, surveillance, tracking, operations,
-                            lowering costs of exploration and construction,
-                            and lowering overhead costs are all included in
-                            CybTEKK's IT solutions for the energy and utilities
-                            sector. The best thing is that we work with every
-                            sector, including the mining and metals industries as
-                            well as the oil, gas, and chemical sectors.
+                        <p>We provide tailored solutions to the energy and utilities sector, addressing its unique
+                            challenges. From optimising energy management systems to implementing smart grid
+                            technologies, we empower organisations to enhance efficiency, promote sustainability, and
+                            drive innovation. Harness our expertise to navigate the evolving landscape and unlock new
+                            possibilities for growth and impact.
+
                         </p>
                     </div>
                 </div>
@@ -183,15 +220,16 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Financial</h2>
-                        <p>Take control of your financial company by enhancing cybersecurity and maintaining legal
-                            compliance. You can facilitate
-                            better compliance, cutting-edge technology, and fewer operational risks with our banking IT
-                            solutions.</p>
+                        <p>Navigate the ever-changing financial landscape with confidence. Our specialized solutions
+                            empower organizations to streamline processes, enhance security, and deliver exceptional
+                            customer experiences. From fintech innovation to regulatory compliance, we equip you with
+                            the tools to stay ahead in the digital economy.
+                        </p>
                     </div>
                 </div>
                 <div class="face face2">
                     <img src="../svg/Financial.svg" alt="Financial">
-                    <p class="detail">Financial</p>
+                    <p class="detail">Financial Sector</p>
                 </div>
             </div>
 
@@ -200,9 +238,11 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Healthcare & Medical</h2>
-                        <p>We'll help you keep informed and in compliance with the law as the healthcare business
-                            develops. With our healthcare IT services,
-                            you can protect sensitive client information.
+                        <p>Protect patient data and optimize healthcare delivery with our HIPAA-compliant solutions.
+                            From secure electronic health records (EHR) management to telemedicine platforms, we enable
+                            healthcare providers to deliver personalized care while maintaining strict data privacy and
+                            security standards.
+
                         </p>
                     </div>
                 </div>
@@ -232,15 +272,17 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Legal & Law Practices</h2>
-                        <p>With the help of our knowledgeable legal IT services, we maintain client confidentiality and
-                            counteract data vulnerabilities.
-                            Our services will implement the latest security measures to benefit your practice.
+                        <p>Modernize legal operations and streamline workflows with our cutting-edge solutions. From
+                            case management systems to document automation, we empower legal professionals to enhance
+                            efficiency, accuracy, and collaboration. Stay ahead of the curve in a rapidly evolving legal
+                            landscape.
+
                         </p>
                     </div>
                 </div>
                 <div class="face face2">
                     <img src="../svg/Law.svg" alt="Legal & Law Practices">
-                    <p class="detail">Legal & Law Practices</p>
+                    <p class="detail">Legal & Law</p>
                 </div>
             </div>
             <div class="card skewEm eight">
@@ -248,9 +290,11 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Manufacturing</h2>
-                        <p>With the help of our knowledgeable legal IT services, we maintain client confidentiality and
-                            counteract data vulnerabilities.
-                            Our services will implement the latest security measures to benefit your practice.
+                        <p>Embrace digital transformation in manufacturing and unlock new levels of productivity and
+                            efficiency. Our tailored solutions encompass automation, IoT integration, supply chain
+                            optimization, and predictive analytics. Enhance operational visibility, reduce costs, and
+                            accelerate innovation in the manufacturing sector.
+
                         </p>
                     </div>
                 </div>
@@ -264,11 +308,11 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Media & Entertainment</h2>
-                        <p>No matter what aspect of the media and entertainment industry you work in— cinema, print, or
-                            television, we will assist you
-                            in putting the necessary software in place. Our skilled professionals could deliver any
-                            media and entertainment solutions ranging
-                            from customized apps to social networking portals.
+                        <p>Deliver unforgettable guest experiences and streamline operations with our hospitality
+                            solutions. From seamless reservation systems to personalized guest engagement platforms, we
+                            help hotels, resorts, and restaurants exceed customer expectations and drive loyalty in a
+                            highly competitive industry.
+
                         </p>
                     </div>
                 </div>
@@ -282,9 +326,12 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Real Estate</h2>
-                        <p>With the help of our real estate mobility services, builders, brokers, and aggregators now
-                            have a platform from which they can offer
-                            24/7/365 services to end customers without having to personally interact with them.
+                        <p>Leverage technology to revolutionize the real estate industry. Our solutions encompass
+                            property management systems, virtual property tours, and data analytics tools, empowering
+                            real estate professionals to streamline operations, enhance customer experiences, and make
+                            data-driven decisions.
+
+
                         </p>
                     </div>
                 </div>
@@ -298,12 +345,11 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Retail</h2>
-                        <p>You can get complete FMCG IT solutions from CybTEKK including inventory management, stock
-                            management, warehouse
-                            management, m-commerce solutions, logistics management, order management systems, e-commerce
-                            solutions, sales force
-                            tracking solutions, customer engagement, Omni channel solutions and sales forecasting
-                            solutions.
+                        <p>Transform the retail experience and boost customer engagement with our retail solutions. From
+                            e-commerce platforms to mobile apps, we help retailers create seamless omnichannel
+                            experiences, optimize inventory management, and harness data-driven insights to drive sales
+                            and customer satisfaction.
+
                         </p>
                     </div>
                 </div>
@@ -317,10 +363,11 @@
                     <div class="content-text">
                         <span class="stars"></span>
                         <h2 class="design-gradient">Travel & Logistics</h2>
-                        <p>CybTEKK is a global travel technology company that offers solutions such as hotel booking
-                            software,  travel agency software,
-                            flight booking engine, and tour operator software for automating to enhance customer travel
-                            experiences and boost bookings.
+                        <p>Streamline operations, optimize routes, and enhance customer experiences in the travel and
+                            logistics sector. Our solutions cover reservation and booking systems, fleet management
+                            tools, and supply chain optimization platforms. Stay agile, efficient, and customer-centric
+                            in a rapidly evolving industry.
+
                         </p>
                     </div>
                 </div>
@@ -366,8 +413,10 @@
                 </ul>
             </div>
 
-            <div class="row">
-                CybTEKK Copyright © 2023 - All rights reserved
+            <div class="row" id="insert-year">
+                CybTEKK Copyright ©
+                <script>document.getElementById('insert-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                - All rights reserved
             </div>
         </div>
     </footer>

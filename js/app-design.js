@@ -55,13 +55,13 @@ timeline.to(
 timeline.to("#consultation-content p", {
   opacity: 0,
   x: 100,
-  duration: 1.5,
+  duration: 0.1,
 });
 
 timeline.to("#consultation-content .title", {
   opacity: 0,
   x: 100,
-  duration: 1.5,
+  duration: 0.1,
 });
 
 // app design

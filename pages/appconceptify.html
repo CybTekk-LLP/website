@@ -34,28 +34,67 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a href="../index.html#about">
-                        About
+                    <a class="close-nav" onclick="lenis.scrollTo('#home')" href="../index.html#home">
+                        Home
                     </a>
                 </li>
                 <li>
-                    <a href="../index.html#services">
-                        Services
+                    <a class="close-nav" onclick="lenis.scrollTo('#about')" href="../index.html#about">
+                        About
                     </a>
                 </li>
 
                 <li>
-                    <a href="../index.html#industries">
+
+                    <details>
+                        <summary>Engagement Models&nbsp;</summary>
+                        <p>
+                        <ul class="nested-li">
+                            <a class="close-nav" onclick="lenis.scrollTo('#services')" href="../index.html#services">
+                                Explore Models
+                            </a>
+                            <a href="../pages/tekkevolve.html">
+                                <li class="close-nav">Tekk Evolve</li>
+                            </a>
+                            <a href="../pages/appconceptify.html">
+                                <li class="close-nav">App Conceptify</li>
+                            </a>
+                            <a href="../pages/talentbridge.html">
+                                <li class="close-nav">Talent Bridge</li>
+                            </a>
+                        </ul>
+                        </p>
+                    </details>
+
+                </li>
+
+                <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#proficiencies')" href="../index.html#proficiencies">
+                        Technologies
+                    </a>
+                </li>
+                <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#industries')" href="../index.html#industries">
                         Industries
                     </a>
                 </li>
                 <li>
-                    <a href="../index.html#careers">
+                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="../index.html#products">
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a class="close-nav" href="https://blog.cybtekk.com" target="_blank">
+                        Blogs
+                    </a>
+                </li>
+                <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#careers')" href="../index.html#careers">
                         Careers
                     </a>
                 </li>
                 <li>
-                    <a href="../index.html#contact">
+                    <a class="close-nav" onclick="lenis.scrollTo('#contact')" href="../index.html#contact">
                         Contact
                     </a>
                 </li>
@@ -66,19 +105,19 @@
             <nav class="footer-nav">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="https://twitter.com/CybTEKK_" target="_blank">
                             <img src="../svg/twitter.svg" alt="Twitter">
 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/CybTEKK/" target="_blank">
                             <img src="../svg/instagram.svg" alt="Instagram">
 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/cybtekk/mycompany/?viewAsMember=true" target="_blank">
                             <img src="../svg/linkedin.svg" alt="LinkedIn">
 
                         </a>
@@ -117,7 +156,7 @@
     </section>
 
     <section class="timeline">
-        <ul>
+        <ul class="skewEm">
             <li>
                 <div>
                     <h3 class="subtagline">App Discovery</h3>
@@ -183,8 +222,10 @@
                 </ul>
             </div>
 
-            <div class="row">
-                CybTEKK Copyright © 2023 - All rights reserved
+            <div class="row" id="insert-year">
+                CybTEKK Copyright ©
+                <script>document.getElementById('insert-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                - All rights reserved
             </div>
         </div>
     </footer>
