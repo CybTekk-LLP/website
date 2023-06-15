@@ -1,7 +1,7 @@
 let colWidth = $(".card").width();
 
 window.onresize = function () {
-  let colWidth = $("card").width();
+  let colWidth = $(".card").width();
 };
 
 let $grid = $(".container").masonry({

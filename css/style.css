@@ -71,9 +71,6 @@ h1 {
     font-size: calc(16px + 4.5vw);
 }
 
-#about h1 {
-    text-transform: none !important;
-}
 
 h2.big,
 h2.big-rev {
