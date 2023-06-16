@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="../css/industries.css">
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="../libraries/lenis-lib.js"></script>
 
 </head>
 
@@ -35,12 +35,12 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#home')" href="../index.html#home">
+                    <a class="close-nav" href="../index.html#home">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#about')" href="../index.html#about">
+                    <a class="close-nav" href="../index.html#about">
                         About
                     </a>
                 </li>
@@ -51,7 +51,7 @@
                         <summary>Engagement Models&nbsp;</summary>
                         <p>
                         <ul class="nested-li">
-                            <a class="close-nav" onclick="lenis.scrollTo('#services')" href="../index.html#services">
+                            <a class="close-nav" href="../index.html#services">
                                 Explore Models
                             </a>
                             <a href="../pages/tekkevolve.html">
@@ -61,8 +61,7 @@
                                 <li class="close-nav">App Conceptify</li>
                             </a>
                             <a href="../pages/talentbridge.html">
-                                <li class=" close-nav">Talent Bridge
-                                </li>
+                                <li class="close-nav">Talent Bridge</li>
                             </a>
                         </ul>
                         </p>
@@ -70,19 +69,61 @@
 
                 </li>
 
+
+                <!-- <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="#products">
+                        Products
+                    </a>
+                </li> -->
                 <li>
-                    <a class="close-nav" href="./pages/technologies.html">
+
+                    <details id="longer">
+                        <summary>Solutions&nbsp;</summary>
+                        <p>
+                        <ul class="nested-li">
+                            <a href="../pages/web.html">
+                                <li class="close-nav">Web</li>
+                            </a>
+                            <a href="../pages/cloud.html">
+                                <li class="close-nav">Cloud</li>
+                            </a>
+                            <a href="../pages/mobile.html">
+                                <li class="close-nav">Mobile</li>
+                            </a>
+                            <a href="../pages/design.html">
+                                <li class="close-nav">Design</li>
+                            </a>
+                            <a href="../pages/iot.html">
+                                <li class="close-nav">Internet of Things</li>
+                            </a>
+                            <a href="../pages/testing.html">
+                                <li class="close-nav">Testing and QA</li>
+                            </a>
+                            <a href="../pages/vr-ar.html">
+                                <li class="close-nav">VR/AR</li>
+                            </a>
+                            <a href="../pages/next-gen.html">
+                                <li class="close-nav">Next-Gen</li>
+                            </a>
+                            <a href="../pages/marketing.html">
+                                <li class="close-nav">Marketing</li>
+                            </a>
+                            <a href="../pages/analysis.html">
+                                <li class="close-nav">Analysis</li>
+                            </a>
+                        </ul>
+                        </p>
+                    </details>
+
+                </li>
+                <li>
+                    <a class="close-nav" href="../pages/technologies.html">
                         Technologies
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" href="./pages/industries.html">
+                    <a class="close-nav" href="../pages/industries.html">
                         Industries
-                    </a>
-                </li>
-                <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="../index.html#products">
-                        Products
                     </a>
                 </li>
                 <li>
@@ -91,12 +132,12 @@
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#careers')" href="../index.html#careers">
+                    <a class="close-nav" href="../pages/careers.html">
                         Careers
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#contact')" href="../index.html#contact">
+                    <a class="close-nav" href="../pages/contact.html">
                         Contact
                     </a>
                 </li>
@@ -119,7 +160,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/cybtekk/mycompany/?viewAsMember=true" target="_blank">
+                        <a href="#">
                             <img src="../svg/linkedin.svg" alt="LinkedIn">
 
                         </a>
@@ -418,9 +459,9 @@
             </div>
         </div>
     </footer>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'></script>
-    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src='../libraries/jquery.js'></script>
+    <script src='../libraries/masonry.js'></script>
+    <script src='../libraries/imagesloaded.js'></script>
     <script src="../js/masonry.js"></script>
     <script src="../js/nav.js" type="module"></script>
     <!-- <script src="../js/logo.js"></script> -->

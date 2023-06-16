@@ -68,7 +68,7 @@ h1 {
     text-align: center;
     color: var(--white);
     line-height: 1.2;
-    font-size: calc(16px + 4.5vw);
+    font-size: calc(16px + 4vw);
 }
 
 
@@ -76,7 +76,7 @@ h2.big,
 h2.big-rev {
     font-family: "Della Respira", serif;
     position: absolute;
-    top: 0;
+    top: calc(-25% - 5rem);
     white-space: nowrap;
     font-size: 288px;
     text-transform: capitalize;
@@ -272,6 +272,12 @@ details[open] summary~* {
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
+.main-nav {
+    max-height: 90vh;
+    overflow-y: scroll;
+    padding: 50px 0;
+}
+
 details:not([open]) {
     height: 2.5em;
 }
@@ -279,6 +285,11 @@ details:not([open]) {
 details[open] {
     height: 8.6em;
 }
+
+details#longer[open] {
+    height: 18.6em;
+}
+
 
 @keyframes sweep {
     0% {
@@ -546,13 +557,13 @@ section {
     width: 100vw;
 }
 
-[id]::before {
+/* [id]::before {
     content: '';
     display: block;
     height: 20vh;
     margin-top: -20vh;
     visibility: hidden;
-}
+} */
 
 #home {
     height: 100vh;
@@ -814,6 +825,7 @@ canvas {
     text-decoration: none;
 }
 
+
 .design-gradient {
     display: block;
     color: transparent;
@@ -959,6 +971,12 @@ canvas {
         margin-left: 0;
         text-align: center;
     }
+
+    #services .left-article button {
+        padding-bottom: 16px;
+        padding-top: 8px;
+    }
+
 }
 
 @media screen and (orientation:portrait) and (max-width:760px) {
@@ -1127,7 +1145,6 @@ canvas {
     filter: blur(100px);
 }
 
-.service_desc {}
 
 @media screen and (orientation: landscape) {
     #about .left-article {
@@ -1161,4 +1178,18 @@ canvas {
     text-decoration-thickness: 0.2rem;
     text-underline-offset: 10px;
     text-decoration-color: var(--pink);
+}
+
+
+.keep-inline {
+    display: inline-block;
+    white-space: nowrap;
+    height: 100px;
+    margin: 100px 0;
+}
+
+.keep-inline img {
+    height: 100px;
+    opacity: 0.2;
+    padding-right: 1rem;
 }

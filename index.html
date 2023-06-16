@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- <script
         src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNvd1tHe6YJhKG2JS-8h06pZ531Ii3ZzI&callback=Function.prototype"></script> -->
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="./libraries/lenis-lib.js"></script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PCD29N2');</script>
     <!-- End Google Tag Manager -->
@@ -86,6 +86,53 @@
 
                 </li>
 
+
+                <!-- <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="#products">
+                        Products
+                    </a>
+                </li> -->
+                <li>
+
+                    <details id="longer">
+                        <summary>Solutions&nbsp;</summary>
+                        <p>
+                        <ul class="nested-li">
+                            <a href="./pages/web.html">
+                                <li class="close-nav">Web</li>
+                            </a>
+                            <a href="./pages/cloud.html">
+                                <li class="close-nav">Cloud</li>
+                            </a>
+                            <a href="./pages/mobile.html">
+                                <li class="close-nav">Mobile</li>
+                            </a>
+                            <a href="./pages/design.html">
+                                <li class="close-nav">Design</li>
+                            </a>
+                            <a href="./pages/iot.html">
+                                <li class="close-nav">Internet of Things</li>
+                            </a>
+                            <a href="./pages/testing.html">
+                                <li class="close-nav">Testing and QA</li>
+                            </a>
+                            <a href="./pages/vr-ar.html">
+                                <li class="close-nav">VR/AR</li>
+                            </a>
+                            <a href="./pages/next-gen.html">
+                                <li class="close-nav">Next-Gen</li>
+                            </a>
+                            <a href="./pages/marketing.html">
+                                <li class="close-nav">Marketing</li>
+                            </a>
+                            <a href="./pages/analysis.html">
+                                <li class="close-nav">Analysis</li>
+                            </a>
+                        </ul>
+                        </p>
+                    </details>
+
+                </li>
                 <li>
                     <a class="close-nav" href="./pages/technologies.html">
                         Technologies
@@ -97,22 +144,17 @@
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="#products">
-                        Products
-                    </a>
-                </li>
-                <li>
                     <a class="close-nav" href="https://blog.cybtekk.com" target="_blank">
                         Blogs
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#careers')" href="#careers">
+                    <a class="close-nav" href="./pages/careers.html">
                         Careers
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#contact')" href="#contact">
+                    <a class="close-nav" href="./pages/contact.html">
                         Contact
                     </a>
                 </li>
@@ -370,8 +412,89 @@
 
             </p>
         </div>
-        <div>
-            <!-- <img src="./images/Band.avif" class="big" alt="" height="150px" role="presentation"> -->
+        <div class="keep-inline">
+            <p class="big" style="left:2000px">
+                <img src="/icons/Figma.svg" alt="Figma">
+                <img src="/icons/MAC.svg" alt="MAC">
+                <img src="/icons/Mongo.svg" alt="Mongo">
+                <img src="/icons/Linux.svg" alt="Linux">
+                <img src="/icons/Android.svg" alt="Android">
+                <img src="/icons/Vue.svg" alt="Vue">
+                <img src="/icons/ethereum.svg" alt="ethereum">
+                <img src="/icons/express.svg" alt="express">
+                <img src="/icons/SQL.svg" alt="SQL">
+                <img src="/icons/Postgres.svg" alt="Postgres">
+                <img src="/icons/Nest.JS.svg" alt="Nest">
+                <img src="/icons/Corel.svg" alt="Corel">
+                <img src="/icons/Angular.svg" alt="Angular">
+                <img src="/icons/flutter.svg" alt="flutter">
+                <img src="/icons/Docker.svg" alt="Docker">
+                <img src="/icons/Ts.svg" alt="Ts">
+                <img src="/icons/Cardano.svg" alt="Cardano">
+                <img src="/icons/Xd.svg" alt="Xd">
+                <img src="/icons/Electron.svg" alt="Electron">
+                <img src="/icons/Krita.svg" alt="Krita">
+                <img src="/icons/Svelte.svg" alt="Svelte">
+                <img src="/icons/Blender.svg" alt="Blender">
+                <img src="/icons/VR.svg" alt="VR">
+                <img src="/icons/Photoshop.svg" alt="Photoshop">
+                <img src="/icons/next.svg" alt="next">
+                <img src="/icons/Windows.svg" alt="Windows">
+                <img src="/icons/accesibility.svg" alt="accesibility">
+                <img src="/icons/IOS.svg" alt="IOS">
+                <img src="/icons/Hyperledger.svg" alt="Hyperledger">
+                <img src="/icons/Podman.svg" alt="Podman">
+                <img src="/icons/React.svg" alt="React">
+                <img src="/icons/Framer.svg" alt="Framer">
+                <img src="/icons/Tauri.svg" alt="Tauri">
+                <img src="/icons/Springboot.svg" alt="Springboot">
+                <img src="/icons/cassandra.svg" alt="cassandra">
+                <img src="/icons/PS.svg" alt="PS">
+                <img src="/icons/node.svg" alt="node">
+                <img src="/icons/Solana.svg" alt="Solana">
+                <img src="/icons/Rebis.svg" alt="Rebis">
+                <img src="/icons/capacitor.svg" alt="capacitor">
+                <img src="/icons/Figma.svg" alt="Figma">
+                <img src="/icons/MAC.svg" alt="MAC">
+                <img src="/icons/Mongo.svg" alt="Mongo">
+                <img src="/icons/Linux.svg" alt="Linux">
+                <img src="/icons/Android.svg" alt="Android">
+                <img src="/icons/Vue.svg" alt="Vue">
+                <img src="/icons/ethereum.svg" alt="ethereum">
+                <img src="/icons/express.svg" alt="express">
+                <img src="/icons/SQL.svg" alt="SQL">
+                <img src="/icons/Postgres.svg" alt="Postgres">
+                <img src="/icons/Nest.JS.svg" alt="Nest">
+                <img src="/icons/Corel.svg" alt="Corel">
+                <img src="/icons/Angular.svg" alt="Angular">
+                <img src="/icons/flutter.svg" alt="flutter">
+                <img src="/icons/Docker.svg" alt="Docker">
+                <img src="/icons/Ts.svg" alt="Ts">
+                <img src="/icons/Cardano.svg" alt="Cardano">
+                <img src="/icons/Xd.svg" alt="Xd">
+                <img src="/icons/Electron.svg" alt="Electron">
+                <img src="/icons/Krita.svg" alt="Krita">
+                <img src="/icons/Svelte.svg" alt="Svelte">
+                <img src="/icons/Blender.svg" alt="Blender">
+                <img src="/icons/VR.svg" alt="VR">
+                <img src="/icons/Photoshop.svg" alt="Photoshop">
+                <img src="/icons/next.svg" alt="next">
+                <img src="/icons/Windows.svg" alt="Windows">
+                <img src="/icons/accesibility.svg" alt="accesibility">
+                <img src="/icons/IOS.svg" alt="IOS">
+                <img src="/icons/Hyperledger.svg" alt="Hyperledger">
+                <img src="/icons/Podman.svg" alt="Podman">
+                <img src="/icons/React.svg" alt="React">
+                <img src="/icons/Framer.svg" alt="Framer">
+                <img src="/icons/Tauri.svg" alt="Tauri">
+                <img src="/icons/Springboot.svg" alt="Springboot">
+                <img src="/icons/cassandra.svg" alt="cassandra">
+                <img src="/icons/PS.svg" alt="PS">
+                <img src="/icons/node.svg" alt="node">
+                <img src="/icons/Solana.svg" alt="Solana">
+                <img src="/icons/Rebis.svg" alt="Rebis">
+                <img src="/icons/capacitor.svg" alt="capacitor">
+            </p>
         </div>
         <div class="send-a-message">
             <p>Send us an email on:</p>
@@ -455,7 +578,7 @@
 
             <div class="row">
                 <ul>
-                    <li><a onclick="lenis.scrollTo('#contact')" href="#contact">Contact</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
                     <li><a onclick="lenis.scrollTo('#services')" href="#services">Services</a></li>
                     <li><a onclick="lenis.scrollTo('#')" href="#">Privacy Policy</a></li>
                     <li><a onclick="lenis.scrollTo('#')" href="#">Terms & Conditions</a></li>
@@ -473,16 +596,17 @@
 
     <script src="./js/main.js" type="module"></script>
     <script src="./js/nav.js" type="module"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
-    <script src="https://unpkg.com/animejs@2.2.0/anime.js"></script>
+    <script src="./libraries/jquery.js"></script>
+    <script src='./libraries/gsap.js'></script>
+    <script src='./libraries/scrolltrigger.js'></script>
+    <script src="./libraries/anime.js"></script>
     <!-- <script src="./js/coral-fur.js"></script> -->
     <script src="./js/lenis.js"></script>
     <script src="./js/gsap.js"></script>
     <script src="./js/anime.js"></script>
     <script src="./js/tagline.js" defer></script>
     <script src="./js/reload.js"></script>
+    <!-- <script src="./js/band.js" type="module"></script> -->
     <!-- Google Tag Manager (noscript) --> <noscript><iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-PCD29N2" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->

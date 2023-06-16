@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | App Conceptify</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/services.css">
     <script src="../libraries/lenis-lib.js"></script>
-
+    <script
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNvd1tHe6YJhKG2JS-8h06pZ531Ii3ZzI&callback=Function.prototype"></script>
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body class="body">
@@ -168,69 +170,92 @@
             </nav>
         </footer>
     </div>
-    <div class="logo" onclick="window.location.href= '../index.html'">
-        <img src="../svg/CybTEKK.svg" role="presentation" alt="">
-    </div>
+
     <section id="design">
-        <h1 class="content background-text">App<br>Conceptify</h1>
+        <h1 class="content background-text">Contact</h1>
     </section>
 
-    <section id="industries">
-        <h2 class="big" role="presentation">Elevate Your App Development Journey with Wireframing and Prototyping.</h2>
-        <h1 class="skewEm">Elevate Your App Development Journey with Wireframing and Prototyping
-        </h1>
-        <h3 class="subtagline skewEm">At CybTEKK, we understand the importance of testing and validating app ideas
-            before investing significant resources in development. That's why we offer our App Prototyping service,which
-            allows clients to create clickable prototypes that bringtheir app ideas to life in weeks.
-        </h3>
+    <section id="contact" class="contact-us">
+        <h2 class="big" role="presentation">Contact - Get In Touch Contact - Get In Touch Contact - Get In Touch Contact
+            - Get In Touch </h2>
+        <h1 class="skewEm">Get In Touch</h1>
         <div class="article-container">
             <p class="left-article">
-            <p class="design-gradient skewEm">Prototyping</p>
+                <!-- <button class="design-gradient skewEm">Get In Touch <span>&#10095;</span></button> -->
             </p>
             <p class="right-article skewEm">
-                App Conceptify (App prototyping) will enable clients to test
-                their app idea with real users, gather feedback, and iterate
-                before committing to full-scale development. With our
-                experienced team of designers and developers, we help bring
-                your app idea to life and set you up for success
+                We would be delighted to hear from you, whether you have an idea you would like to get the ball rolling
+                on, or a simple question, our team is always one click away.
             </p>
         </div>
-    </section>
+        <br><br>
+        <div class="article-container">
+            <div class="left-article">
+                <div class="della-contact">
 
-    <section class="timeline">
-        <ul class="skewEm">
-            <li>
-                <div>
-                    <h3 class="subtagline">App Discovery</h3>
-                    <p class="detail">Uncover the Best Apps for
-                        Next-Level User Engagement</p>
+                    <h3 class="della subtagline">Address</h3>
+                    <p>Plot No. 10, 4th Floor <br>
+                        Rajiv Gandhi IT Park, Sector 13, <br>
+                        Chandigarh 160101, <br>
+                        India (IN)
+                    </p>
+                    <br>
+                    <hr>
+                    <h3 class="della subtagline">Phone</h3>
+                    <p><a style="padding-top: 0.2em;" href="tel:+91-9875906299">+91-9875906299</a>
+                    </p>
+                    <p><a style="padding-top: 0.2em;" href="tel:+91-9875906300">+91-9875906300</a>
+                    </p>
+                    <br>
+                    <hr>
+                    <h3 class="della subtagline">Email</h3>
+                    <p><a style="padding-top: 0.2em;" href='mailto:hello@cybtekk.com'>hello@cybtekk.com</a>
+                    </p>
+                    <br><br>
                 </div>
-            </li>
-            <li>
-                <div>
-                    <h3 class="subtagline">Design Prototype</h3>
-                    <p class="detail">Elevating User Engagement through
-                        Seamless Visuals</p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h3 class="subtagline">Constructing User Flow</h3>
-                    <p class="detail">Engineering Pathways from
-                        Empathize to Launch</p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h3 class="subtagline">Clickable Prototype</h3>
-                    <p class="detail">How Clickable Prototypes Supercharge
-                        Your Design Process</p>
-                </div>
-            </li>
-        </ul>
+            </div>
+            <div class="right-article">
+                <form id="contacts" action="" method="post">
+                    <div>
+                        <h3 class="subtagline subtagcontact">Contact</h3>
+                    </div>
+                    <div class="inputField">
+                        <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>
+                        <span class="valid_info_name"></span>
+                    </div>
+
+                    <div class="inputField">
+                        <input type="Email" name="email" id="email" placeholder="Your email" required="" />
+                        <span class="valid_info_email"></span>
+                    </div>
+
+                    <div class="inputField">
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                        <span class="valid_info_message"></span>
+                    </div>
+
+                    <div class="inputField btn">
+                        <button type="submit" id="form-submit" class="main-gradient-button" disabled>Send a
+                            message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+    <div class="map-container">
+        <div id="map_canvas" class="map"></div>
+    </div>
+
+    <br><br>
     <footer>
+
         <div class="footer">
+            <div class="send-a-message">
+                <p>Send us an email on:</p>
+                <h3 class="subtagline email"><a style="padding-top: 0.2em;" class="design-gradient"
+                        href='mailto:hello@cybtekk.com'>hello@cybtekk.com</a>
+                </h3>
+            </div>
             <div class="row">
                 <ul>
                     <li>
@@ -272,10 +297,11 @@
         </div>
     </footer>
     <script src="../js/nav.js" type="module"></script>
-    <script src="../js/timeline.js"></script>
     <!-- <script src="../js/logo.js"></script> -->
+    <script src="../js/map.js"></script>
     <script src="../js/lenis.js" type="module"></script>
-
+    <script src="../libraries/jquery.js"></script>
+    <script src="../js/contact-validation.js"></script>
 </body>
 
 </html>

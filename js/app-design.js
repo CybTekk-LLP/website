@@ -130,21 +130,6 @@ timeline.to("#app-dev .app", {
   duration: 1.5,
 });
 
-timeline.to("#app-dev", { opacity: 0, y: 20, duration: 1.5 });
-timeline.to("#app-dev-content p", {
-  opacity: 0,
-  x: 100,
-  duration: 1.5,
-});
-
-timeline.to("#app-dev-content .title", {
-  opacity: 0,
-  x: 100,
-  duration: 1.5,
-});
-
-timeline.to(".iphone-frame", { opacity: 0, x: -100, y: 50 });
-
 /*
 import { isInViewport } from "./viewport.mjs";
 // Get the an HTML element

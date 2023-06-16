@@ -216,4 +216,6 @@ function initMap() {
   });
 }
 
-export { initMap };
+window.addEventListener("load", function () {
+  initMap();
+});

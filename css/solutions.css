@@ -1,0 +1,109 @@
+:root {
+    --blue: #3b82d5;
+    --pink: #ac53f1;
+    --white: #fafffd;
+    --platinum: #dee5e5;
+    --black: #12130f;
+}
+
+.solution-heading {
+    text-align: left !important;
+    border-left: 5px solid var(--pink);
+    padding-left: 2rem;
+}
+
+.solution-space {
+    width: 50vw;
+}
+
+
+.panel {
+    width: 600px;
+    max-width: 90vw;
+    height: 500px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    float: left;
+    flex-shrink: 0;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    text-align: left;
+    position: relative;
+}
+
+#panel-1 {
+    margin-left: 40vw;
+}
+
+#panels .panel h2 {
+
+    text-align: left;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 1.2;
+    font-size: calc(16px + 2vw);
+    vertical-align: top;
+
+}
+
+#panels .panel h1 {
+    text-align: left;
+
+}
+
+#panels .panel p {
+    text-align: left;
+    color: var(--white);
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 2;
+    font-weight: 200;
+    vertical-align: baseline;
+    width: 90%;
+    margin: auto;
+    width: 100%;
+}
+
+#panels .panel .absolute-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    text-align: left;
+    padding: 2em;
+}
+
+
+#panels .container-solution {
+    background-color: rgba(255, 255, 255, 0.07);
+    backdrop-filter: 14px;
+    width: 100%;
+    padding: 2em;
+}
+
+
+/* #panels-container {
+    width: 450%;
+}
+
+
+@media screen and (orientation:portrait) {
+
+    #panels-container {
+        width: 800%;
+    }
+
+} */
+
+
+
+.design-gradient {
+    font-size: calc(15px + 2vw) !important;
+}
+
+#panels-container .design-gradient {
+    padding: 0;
+}

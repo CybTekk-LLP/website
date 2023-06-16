@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="../css/industries.css">
     <link rel="stylesheet" href="../css/technologies.css">
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="../libraries/lenis-lib.js"></script>
 
 </head>
 
@@ -36,12 +36,12 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#home')" href="../index.html#home">
+                    <a class="close-nav" href="../index.html#home">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#about')" href="../index.html#about">
+                    <a class="close-nav" href="../index.html#about">
                         About
                     </a>
                 </li>
@@ -52,7 +52,7 @@
                         <summary>Engagement Models&nbsp;</summary>
                         <p>
                         <ul class="nested-li">
-                            <a class="close-nav" onclick="lenis.scrollTo('#services')" href="../index.html#services">
+                            <a class="close-nav" href="../index.html#services">
                                 Explore Models
                             </a>
                             <a href="../pages/tekkevolve.html">
@@ -70,19 +70,61 @@
 
                 </li>
 
+
+                <!-- <li>
+                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="#products">
+                        Products
+                    </a>
+                </li> -->
                 <li>
-                    <a class="close-nav" href="./pages/technologies.html">
+
+                    <details id="longer">
+                        <summary>Solutions&nbsp;</summary>
+                        <p>
+                        <ul class="nested-li">
+                            <a href="../pages/web.html">
+                                <li class="close-nav">Web</li>
+                            </a>
+                            <a href="../pages/cloud.html">
+                                <li class="close-nav">Cloud</li>
+                            </a>
+                            <a href="../pages/mobile.html">
+                                <li class="close-nav">Mobile</li>
+                            </a>
+                            <a href="../pages/design.html">
+                                <li class="close-nav">Design</li>
+                            </a>
+                            <a href="../pages/iot.html">
+                                <li class="close-nav">Internet of Things</li>
+                            </a>
+                            <a href="../pages/testing.html">
+                                <li class="close-nav">Testing and QA</li>
+                            </a>
+                            <a href="../pages/vr-ar.html">
+                                <li class="close-nav">VR/AR</li>
+                            </a>
+                            <a href="../pages/next-gen.html">
+                                <li class="close-nav">Next-Gen</li>
+                            </a>
+                            <a href="../pages/marketing.html">
+                                <li class="close-nav">Marketing</li>
+                            </a>
+                            <a href="../pages/analysis.html">
+                                <li class="close-nav">Analysis</li>
+                            </a>
+                        </ul>
+                        </p>
+                    </details>
+
+                </li>
+                <li>
+                    <a class="close-nav" href="../pages/technologies.html">
                         Technologies
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" href="./pages/industries.html">
+                    <a class="close-nav" href="../pages/industries.html">
                         Industries
-                    </a>
-                </li>
-                <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#products')" href="../index.html#products">
-                        Products
                     </a>
                 </li>
                 <li>
@@ -91,12 +133,12 @@
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#careers')" href="../index.html#careers">
+                    <a class="close-nav" href="../pages/careers.html">
                         Careers
                     </a>
                 </li>
                 <li>
-                    <a class="close-nav" onclick="lenis.scrollTo('#contact')" href="../index.html#contact">
+                    <a class="close-nav" href="../pages/contact.html">
                         Contact
                     </a>
                 </li>
@@ -119,7 +161,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/cybtekk/mycompany/?viewAsMember=true" target="_blank">
+                        <a href="#">
                             <img src="../svg/linkedin.svg" alt="LinkedIn">
 
                         </a>
@@ -142,11 +184,10 @@
         </h3> -->
         <div class="article-container">
             <p class="left-article skewEm">
-                We at CybTEKK understand that each industry has it’s own intricacies and special requirements that need
-                to be addressed and cared for, as pure technologists at heart, we specialise in identifying and
-                unveiling patterns, insights and strategies in various industries which cater to these intricacies. A
-                technological revolution is upon us, let us help your business stay ahead of the curve.
-
+                Technologies eb and flow, we ensure that we stay ahead of the trend and embrace technological
+                innovations as they come. We at CybTEKK like to take pride in our code, we always stay ahead following
+                the best practices and standards. Every project is unique, therefore with each project we evaluate which
+                tech stack best suits the task at hand.
             </p>
             <!-- <p class="right-article skewEm hide-on-phone">
                 We aim to provide your business with the most necessary, advantageous
@@ -190,10 +231,14 @@
                 </p>
             </div>
             <div class="techcard skewEm card">
-                <img src="../icons/MAC.svg" alt="">
+                <img src="../icons/Mongo.svg" alt="">
+                <img src="../icons/express.svg" alt="">
+                <img src="../icons/React.svg" alt="">
+                <img src="../icons/node.svg" alt="">
+                <img src="../icons/next.svg" alt="">
                 <img src="../icons/Postgres.svg" alt="">
-                <img src="../icons/Nest.JS.svg" alt="">
-                <img src="../icons/.svg" alt="">
+                <img src="../icons/Angular.svg" alt="">
+                <img src="../icons/Vue.svg" alt="">
                 <h1 class="skewEm design-gradient">Full-Stack Applications
                 </h1>
                 <p>We strive towards building the most robust and scalable full stack solutions tailored to your exact
@@ -201,10 +246,13 @@
                 </p>
             </div>
             <div class="techcard skewEm card">
-                <img src="../icons/Svelte.svg" alt="">
-                <img src="../icons/Vue.svg" alt="">
-                <img src="../icons/React.svg" alt="">
-                <img src="../icons/Angular.svg" alt="">
+                <img src="../icons/Ts.svg" alt="">
+                <img src="../icons/Node.svg" alt="">
+                <img src="../icons/Tauri.svg" alt="">
+                <img src="../icons/Electron.svg" alt="">
+                <img src="../icons/MAC.svg" alt="">
+                <img src="../icons/Windows.svg" alt="">
+                <img src="../icons/Linux.svg" alt="">
                 <h1 class="skewEm design-gradient">Desktop App Development
                 </h1>
                 <p>At CybTEKK we create the most scalable enterprise desktop app solutions which not only look and feel
@@ -213,10 +261,11 @@
                 </p>
             </div>
             <div class="techcard skewEm card">
-                <img src="../icons/Svelte.svg" alt="">
-                <img src="../icons/Vue.svg" alt="">
-                <img src="../icons/React.svg" alt="">
-                <img src="../icons/Angular.svg" alt="">
+                <img src="../icons/flutter.svg" alt="">
+                <img src="../icons/capacitor.svg" alt="">
+                <img src="../icons/Tauri.svg" alt="">
+                <img src="../icons/Android.svg" alt="">
+                <img src="../icons/IOS.svg" alt="">
                 <h1 class="skewEm design-gradient"> Mobile App Development
                 </h1>
                 <p>The future of computing is not quantum, it’s mobile, with over 90% of users using mobile to do pretty
@@ -225,10 +274,14 @@
                 </p>
             </div>
             <div class="techcard skewEm card">
-                <img src="../icons/Svelte.svg" alt="">
-                <img src="../icons/Vue.svg" alt="">
-                <img src="../icons/React.svg" alt="">
-                <img src="../icons/Angular.svg" alt="">
+                <img src="../icons/Nest.JS.svg" alt="">
+                <img src="../icons/express.svg" alt="">
+                <img src="../icons/Springboot.svg" alt="">
+                <img src="../icons/Docker.svg" alt="">
+                <img src="../icons/Podman.svg" alt="">
+                <img src="../icons/Postgres.svg" alt="">
+                <img src="../icons/Mongo.svg" alt="">
+                <img src="../icons/Rebis.svg" alt="">
                 <h1 class="skewEm design-gradient">Backend Development
                 </h1>
                 <p>How good your backend is can either make or break your app, we can take care of your entire backend
@@ -236,10 +289,12 @@
                 </p>
             </div>
             <div class="techcard skewEm card">
-                <img src="../icons/Svelte.svg" alt="">
-                <img src="../icons/Vue.svg" alt="">
-                <img src="../icons/React.svg" alt="">
-                <img src="../icons/Angular.svg" alt="">
+                <img src="../icons/ethereum.svg" alt="">
+                <img src="../icons/Solana.svg" alt="">
+                <img src="../icons/Cardano.svg" alt="">
+                <img src="../icons/Hyperledger.svg" alt="">
+                <img src="../icons/VR.svg" alt="">
+                <img src="../icons/Blender.svg" alt="">
                 <h1 class="skewEm design-gradient">Next-Gen Products
                 </h1>
                 <p>The future of technology is now, at CybTEKK we always stay ahead of the curve and offer our clients
@@ -292,9 +347,9 @@
             </div>
         </div>
     </footer>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'></script>
-    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src='../libraries/jquery.js'></script>
+    <script src='../libraries/masonry.js'></script>
+    <script src='../libraries/imagesloaded.js'></script>
     <script src="../js/nav.js" type="module"></script>
     <!-- <script src="../js/logo.js"></script> -->
     <script src="../js/lenis.js" type="module"></script>
