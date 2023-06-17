@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
+    text-decoration: none;
 }
 
 html,
@@ -61,7 +62,8 @@ body {
 
 
 
-h1 {
+h1,
+h4 {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -273,7 +275,7 @@ details[open] summary~* {
 }
 
 .main-nav {
-    max-height: 90vh;
+    max-height: calc(100% - 50px);
     overflow-y: scroll;
     padding: 50px 0;
 }
@@ -287,7 +289,7 @@ details[open] {
 }
 
 details#longer[open] {
-    height: 18.6em;
+    height: 18.2em;
 }
 
 
@@ -609,7 +611,8 @@ button {
     width: 600px;
 }
 
-.left h1 {
+.left h1,
+.left h4 {
     font-size: 3.4vw;
     padding-bottom: 0.5rem;
     text-transform: none;
@@ -777,14 +780,21 @@ canvas {
 }
 
 #about h1,
+#about h4,
 #services h1,
+#services h4,
 #services h3,
 #industries h1,
+#industries h4,
 #industries h3,
 #products h1,
+#products h4,
 #proficiencies h1,
+#proficiencies h4,
 #careers h1,
-#contact h1 {
+#careers h4,
+#contact h1,
+#contact h4 {
     width: 60vw;
     margin: 0 auto;
     padding-bottom: 3rem;
@@ -1019,14 +1029,21 @@ canvas {
 
 
     #about h1,
+    #about h4,
     #services h1,
+    #services h4,
     #services h3,
     #industries h1,
+    #industries h4,
     #industries h3,
     #products h1,
+    #products h4,
     #proficiencies h1,
+    #proficiencies h4,
     #careers h1,
-    #contact h1 {
+    #careers h4,
+    #contact h1,
+    #contact h4 {
         width: 80vw;
         margin: 0 auto;
         padding-bottom: 1.5rem;

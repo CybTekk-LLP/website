@@ -1,4 +1,5 @@
 let panel = document.querySelectorAll(".panel");
+let panelsSection = document.querySelector("#panels");
 function sizer() {
   let i = 0;
   for (let p of panel) {
@@ -12,11 +13,33 @@ function sizer() {
 }
 sizer();
 
+var ts;
+$(panelsSection).bind("touchstart", function (e) {
+  ts = e.originalEvent.touches[0].clientX;
+});
+
+$(panelsSection).bind("touchend", function (e) {
+  var te = e.originalEvent.changedTouches[0].clientX;
+  if (ts > te + 5) {
+    slide_down(ts, te);
+  } else if (ts < te - 5) {
+    slide_up(ts, te);
+  }
+});
+function slide_down(start, end) {
+  if (window.matchMedia("(orientation: portrait)").matches)
+    window.scrollBy(0, start - end);
+}
+function slide_up(start, end) {
+  if (window.matchMedia("(orientation: portrait)").matches)
+    window.scrollBy(0, start - end);
+}
+
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 /* Main navigation */
-let panelsSection = document.querySelector("#panels"),
-  panelsContainer = document.querySelector("#panels-container"),
+
+let panelsContainer = document.querySelector("#panels-container"),
   tween;
 document.querySelectorAll(".anchor").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

@@ -109,7 +109,7 @@ $(document).ready(function () {
       $("#name").removeClass("invalid");
       $(".valid_info_name")
         .text("The entered name is valid")
-        .css("color", "black");
+        .css("color", "#111111");
       $("#name").addClass("valid");
       // check first character
       if (!/[a-zA-Zа-яА-ЯёЁіІїЇєЄ]/.test(firstChar)) {
@@ -349,12 +349,12 @@ $(document).ready(function () {
                 $("#email").removeClass("invalid");
                 $(".valid_info_email")
                   .text("The entered address is valid")
-                  .css("color", "black");
+                  .css("color", "#111111");
                 $("#email").addClass("valid");
                 let infoCallback = function () {
                   $(".valid_info_email")
                     .text("The entered address is valid")
-                    .css("color", "black");
+                    .css("color", "#111111");
                 };
                 denyChar(infoCallback);
                 emailVal = true;
@@ -722,7 +722,7 @@ $(document).ready(function () {
       $("#message").removeClass("invalid");
       $(".valid_info_message")
         .text("The entered message is valid")
-        .css("color", "black");
+        .css("color", "#111111");
       $("#message").addClass("valid");
       textareaVal = true;
       return true;
