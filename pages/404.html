@@ -14,7 +14,7 @@
 
         .page_404 {
             padding: 40px 0;
-            background: #fff;
+            background: #12130f;
             font-family: 'Arvo', serif;
         }
 
@@ -23,10 +23,14 @@
         }
 
         .four_zero_four_bg {
-
-            background-image: url(https://cdn.dribbble.com/users/722246/screenshots/3066818/404-page.gif);
+            background-image: url("../images/404.gif");
             height: 650px;
             background-position: center;
+            -webkit-filter: hue-rotate(60deg) brightness(150%) contrast(80%) saturate(140%);
+            -moz-filter: hue-rotate(60deg) brightness(150%) contrast(80%) saturate(140%);
+            -o-filter: hue-rotate(60deg) brightness(150%) contrast(80%) saturate(140%);
+            filter: hue-rotate(60deg) brightness(150%) contrast(80%) saturate(140%);
+            image-rendering: optimizeQuality;
         }
 
 
@@ -48,6 +52,10 @@
 
         .contant_box_404 {
             margin-top: -50px;
+        }
+
+        .h2 {
+            color: #dee5e5;
         }
     </style>
 </head>

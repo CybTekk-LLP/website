@@ -4,7 +4,7 @@ setTimeout(function () {
   loader.style.opacity = "0";
   loader.style.visibility = "hidden";
   //   loader.style.display = "none";
-}, 1250);
+}, 750);
 setTimeout(function () {
   loader.style.display = "none";
-}, 1250);
+}, 750);

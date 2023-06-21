@@ -1,0 +1,25 @@
+<svg width="66" height="5" viewBox="0 0 66 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="svg-path"
+        d="M0.884766 3.72816C5.05206 3.04823 9.2493 2.69218 13.4634 2.45352C23.4529 1.88777 33.4514 1.48403 43.4575 1.43382C49.2155 1.40492 54.9742 1.47089 60.7321 1.42711C62.1339 1.41645 63.4991 1.37304 64.8848 1.19231"
+        stroke="url(#paint0_linear_21_13)" stroke-width="2" stroke-linecap="round" />
+    <defs>
+        <linearGradient id="paint0_linear_21_13" x1="65.5" y1="1.00002" x2="0.5" y2="3.50001"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3B82D5" />
+            <stop offset="1" stop-color="#AC53F1" />
+        </linearGradient>
+        <style>
+            .svg-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 1.2s 1s ease-in-out forwards;
+            }
+
+            @keyframes dash {
+            to {
+            stroke-dashoffset: 0;
+            }
+            }
+</style>
+    </defs>
+</svg>

@@ -54,10 +54,18 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 // looper();
+const handleScrollIndicator = () => {
+  const scrollIndicator = document.querySelector("#scroll-indicator");
+  const maxHeight = document.body.scrollHeight - window.innerHeight;
+
+  const widthPercentage = (window.scrollY / maxHeight) * 100;
+  scrollIndicator.style.width = `${widthPercentage}%`;
+};
 
 lenis.on("scroll", (e) => {
   big();
   big2();
+  handleScrollIndicator();
 });
 
 // gsap.ticker.add((time) => {
@@ -77,3 +85,9 @@ details.forEach((targetDetail) => {
     });
   });
 });
+
+if (window.matchMedia("(orientation: landscape)").matches) {
+  details.forEach((detail) => {
+    detail.open = true;
+  });
+}
