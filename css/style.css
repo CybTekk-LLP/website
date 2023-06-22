@@ -884,6 +884,7 @@ canvas {
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
+    text-transform: uppercase;
 }
 
 .design-gradient span {
@@ -1452,5 +1453,13 @@ canvas {
 
     .swiper .swiper-slide .slide {
         width: 60%;
+    }
+
+    #engagement .left-article button {
+        padding-top: 30px;
+    }
+
+    .swiper-slide a .design-gradient {
+        font-size: calc(0.5vw + 1rem) !important;
     }
 }
