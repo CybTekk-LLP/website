@@ -494,6 +494,7 @@ ul.techstack {
     font-family: "Merriweather Sans", sans-serif;
     color: var(--platinum);
     margin-left: 20px;
+    line-height: 2;
 }
 
 ul.techstack:before {
