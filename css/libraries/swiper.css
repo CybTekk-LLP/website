@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #ac53f1
+    --swiper-theme-color: rgba(250, 255, 253, 0.3)
 }
 
 .swiper,

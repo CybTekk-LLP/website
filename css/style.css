@@ -70,7 +70,7 @@ h4 {
     text-align: center;
     color: var(--white);
     line-height: 1.2;
-    font-size: calc(16px + 4vw);
+    font-size: calc(18px + 3.9vw);
 }
 
 
@@ -91,7 +91,7 @@ h3.subtagline {
     font-family: "Merriweather Sans", sans-serif;
     font-weight: 600;
     color: var(--platinum);
-    font-size: calc(15px + 2vw);
+    font-size: calc(17px + 2vw);
     text-transform: capitalize;
 }
 
@@ -1459,7 +1459,8 @@ canvas {
         padding-top: 30px;
     }
 
-    .swiper-slide a .design-gradient {
+    .swiper-slide a .design-gradient,
+    .learn-more {
         font-size: calc(0.5vw + 1rem) !important;
     }
 }
