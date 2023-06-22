@@ -530,9 +530,9 @@ details[open] summary:after {
 }
 
 .background span {
-    width: 30vmin;
-    height: 30vmin;
-    border-radius: 30vmin;
+    width: 33vmin;
+    height: 33vmin;
+    border-radius: 33vmin;
     backface-visibility: hidden;
     position: absolute;
     animation-name: move;
@@ -550,10 +550,10 @@ details[open] summary:after {
     animation-delay: -4.2s;
     transform-origin: -9vw 15vh;
     box-shadow: 30vmin 0 9vmin var(--pink);
-    filter: blur(3em);
-    -webkit-filter: blur(3em);
-    -moz-filter: blur(3em);
-    -o-filter: blur(3em);
+    filter: blur(5em);
+    -webkit-filter: blur(5em);
+    -moz-filter: blur(5em);
+    -o-filter: blur(5em);
 
 }
 
@@ -566,10 +566,10 @@ details[open] summary:after {
     animation-delay: -11s;
     transform-origin: -4vw 11vh;
     box-shadow: 30vmin 0 9vmin var(--blue);
-    filter: blur(2em);
-    -webkit-filter: blur(2em);
-    -moz-filter: blur(2em);
-    -o-filter: blur(2em);
+    filter: blur(5em);
+    -webkit-filter: blur(5em);
+    -moz-filter: blur(5em);
+    -o-filter: blur(5em);
 }
 
 
