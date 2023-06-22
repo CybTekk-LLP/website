@@ -539,7 +539,6 @@ details[open] summary:after {
     animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-
 }
 
 .background span:nth-child(1) {
@@ -859,6 +858,7 @@ canvas {
 #services .left-article button,
 #industries .left-article button,
 #engagement .left-article button,
+#proficiencies .left-article button,
 #products .left-article button,
 #careers .left-article button,
 #contact .left-article button {
@@ -1020,6 +1020,7 @@ canvas {
     #services .left-article button,
     #engagement .left-article button,
     #industries .left-article button,
+    #proficiencies .left-article button,
     #products .left-article button,
     #careers .left-article button,
     #contact .left-article button {
@@ -1294,21 +1295,21 @@ canvas {
         font-size: calc(0.4vw + 0.8rem) !important;
     }
 
-    .main-nav ul li:nth-of-type(2) {
+    /* .main-nav ul li:nth-of-type(2) {
         display: none;
     }
 
     .main-nav ul li:nth-of-type(2) {
         display: none;
-    }
+    } */
 
-    .main-nav ul li:nth-of-type(n + 5) a {
+    .main-nav ul li:nth-of-type(n + 4) a {
 
         font-weight: 400 !important;
         font-size: calc(0.4vw + 0.8rem) !important;
     }
 
-    .main-nav ul li:nth-of-type(5)::before {
+    .main-nav ul li:nth-of-type(4)::before {
         display: block;
         content: "";
         height: 20vh;

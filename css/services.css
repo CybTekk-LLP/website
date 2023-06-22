@@ -489,3 +489,16 @@ p.detail {
         font-size: calc(16px + 2vw) !important;
     }
 }
+
+ul.techstack {
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--platinum);
+    margin-left: 20px;
+}
+
+ul.techstack:before {
+    content: attr(aria-label);
+    font-size: 120%;
+    font-weight: bold;
+    margin-left: -15px;
+}
