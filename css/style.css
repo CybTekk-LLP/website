@@ -1447,10 +1447,10 @@ canvas {
 
 @media screen and (orientation:portrait) and (max-width:768px) {
     .swiper .swiper-slide {
-        width: 100vw;
+        width: 150vw;
     }
 
     .swiper .swiper-slide .slide {
-        width: 90%;
+        width: 60%;
     }
 }
