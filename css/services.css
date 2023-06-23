@@ -33,13 +33,13 @@
     height: 3.5rem;
     width: auto;
     z-index: 4;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s ease-in-out;
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 .logo img.is-active {
-    opacity: 1;
+    /* opacity: 1; */
     transition: all 0.5s ease-in-out;
 }
 
@@ -127,7 +127,7 @@ p.detail {
 
 .timeline ul li div {
     visibility: hidden;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 1.2s ease;
     transition-delay: 100ms;
     background: rgba(114, 114, 114, 0.1);
@@ -173,7 +173,7 @@ p.detail {
 .timeline ul li.in-view div {
     transform: none;
     visibility: visible;
-    opacity: 1;
+    /* opacity: 1; */
     transition: all 1.2s ease;
     transition-delay: 500ms;
 }
@@ -196,7 +196,7 @@ p.detail {
 }
 
 .phone-animation img.shapes {
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
@@ -204,7 +204,7 @@ p.detail {
 }
 
 .phone-animation img.appear {
-    opacity: 1;
+    /* opacity: 1; */
     transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
@@ -215,13 +215,13 @@ p.detail {
     padding-left: 40px;
     position: relative;
     top: 80px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all ease 0.5s;
 }
 
 .phone-animation .phone-animation-container.lift-up {
     top: 50px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .phone-animation .phone-animation-container .design-gradient {

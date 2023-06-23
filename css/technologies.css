@@ -22,7 +22,7 @@
 
 .techcard h1 {
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: left !important;
     padding-left: 0;
     padding-bottom: 1rem;

@@ -26,6 +26,10 @@ html,
     -webkit-tap-highlight-color: transparent;
 }
 
+p {
+    font-size: 14px;
+}
+
 html.lenis {
     height: auto;
 }
@@ -78,12 +82,12 @@ h2.big,
 h2.big-rev {
     font-family: "Della Respira", serif;
     position: absolute;
-    top: calc(-25% - 5rem);
+    top: calc(-15% - 4rem);
     white-space: nowrap;
-    font-size: 288px;
+    font-size: 208px;
     text-transform: capitalize;
     color: var(--platinum);
-    opacity: 10%;
+    opacity: 5%;
     pointer-events: none;
 }
 
@@ -92,7 +96,7 @@ h3.subtagline {
     font-weight: 600;
     color: var(--platinum);
     font-size: calc(17px + 2vw);
-    text-transform: capitalize;
+    text-transform: uppercase !important;
 }
 
 p,
@@ -412,7 +416,7 @@ details[open] summary:after {
 
 .ham {
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
-    width: 70px;
+    width: 50px;
     -webkit-tap-highlight-color: transparent;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -422,7 +426,7 @@ details[open] summary:after {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-    background-color: rgba(13, 24, 33, 0.3);
+    background-color: rgba(13, 24, 33, 0.2);
     backdrop-filter: 10px;
     border-radius: 50%;
 }
@@ -602,7 +606,8 @@ section {
 }
 
 #design {
-    min-height: 40vh
+    min-height: 40vh;
+    transform: translate3d(0, 0, 0, 0);
 }
 
 button {
@@ -863,7 +868,6 @@ canvas {
 #careers .left-article button,
 #contact .left-article button {
     display: block;
-    margin-left: 1.2rem;
     padding-bottom: 5px;
 }
 
@@ -1414,7 +1418,7 @@ canvas {
     /* Safari */
     -khtml-user-select: none;
     /* Konqueror HTML */
-    -moz-user-select: none;
+    -moz-: none;
     /* Old versions of Firefox */
     -ms-user-select: none;
     /* Internet Explorer/Edge */
@@ -1424,9 +1428,19 @@ canvas {
     justify-content: center;
 }
 
+
 .swiper .swiper-slide {
     width: 60vw;
     height: auto
+}
+
+.swiper .swiper-slide h3.subtagline {
+    text-transform: uppercase;
+    font-size: calc(1.3vw + 1rem) !important
+}
+
+.swiper .swiper-slide a .design-gradient {
+    font-size: 14px !important
 }
 
 .swiper .swiper-slide .slide {
@@ -1463,4 +1477,18 @@ canvas {
     .learn-more {
         font-size: calc(0.5vw + 1rem) !important;
     }
+}
+
+
+
+#about .left-article h3.subtagline {
+    text-transform: uppercase !important;
+}
+
+.learn-more {
+    font-size: 14px !important;
+}
+
+h3.subtagline.email {
+    font-size: calc(14px + 1.8vw);
 }

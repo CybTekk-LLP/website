@@ -62,6 +62,7 @@ textarea {
 
 .valid_info_name,
 .valid_info_email,
+.valid_info_phone,
 .valid_info_message {
     display: inline-block;
     font-size: 13px;
@@ -81,7 +82,7 @@ textarea {
 .btn {
     display: inline-flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 #form-submit {
@@ -143,7 +144,7 @@ button:hover,
 }
 
 .design-gradient {
-    font-size: calc(15px + 2vw) !important;
+    font-size: calc(14px + 1.8vw) !important;
     padding-left: 2em !important;
 }
 
@@ -155,11 +156,16 @@ button:hover,
     }
 }
 
+h3.subtagline {
+    font-size: calc(1.5vw + 13px);
+}
+
 h3.subtagcontact {
     font-weight: 600;
     padding: 0 2em 1em 0;
     text-align: left;
     margin-left: 0;
+    font-family: "Della Respira", serif !important;
 }
 
 h3.della {
@@ -182,7 +188,13 @@ h3.della {
 @media screen and (orientation:landscape) {
     .della-contact {
         width: 30vw;
+        line-height: 1.7;
     }
+
+    .della-contact p {
+        line-height: 2.8;
+    }
+
 
     h3.della {
         font-weight: 600;
