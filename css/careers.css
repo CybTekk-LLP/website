@@ -8,10 +8,6 @@
     --border-radius: 5px;
     --space-between: 20px;
     --font-size: 16px;
-    --color-5: #ce4257;
-    --color: #999;
-    --checked-color: #ff5722;
-    --bg-color: #e8e8e8;
 }
 
 
@@ -100,6 +96,7 @@
     user-select: none;
 }
 
+
 #survey-form * {
     font-size: var(--font-size);
     -webkit-tap-highlight-color: transparent;
@@ -107,6 +104,21 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    -webkit-tap-highlight-color: transparent;
+    /* best code to remove _blue highlight */
 }
 
 .row-label,
@@ -220,30 +232,5 @@ input[type="radio"] {
     height: 1.2rem;
     width: 1.2rem;
     margin-right: 0.5rem;
-    /* hiding browser el */
-    appearance: none;
-    /* Safari support */
-    -webkit-appearance: none;
-    border: 0.2rem solid #fff;
-    background-color: var(--bg-color);
-    border-radius: 50%;
-}
-
-/* keyboard navigation focus appearance */
-input[type="radio"]:focus-visible {
-    outline-offset: 0;
-}
-
-input[type="radio"] {
-    box-shadow: 0 0 0 1px var(--color);
-}
-
-input[type="radio"]:hover {
-    border-width: 0;
-}
-
-input[type="radio"]:checked {
-    box-shadow: 0 0 0 1px var(--checked-color);
-    background-color: var(--checked-color);
-    border-width: 0.2rem;
+    transform: translateY(0.3rem);
 }
