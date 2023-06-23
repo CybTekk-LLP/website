@@ -102,6 +102,8 @@
 
 .design-gradient {
     font-size: calc(14px + 1.8vw) !important;
+    padding-top: 0px;
+
 }
 
 #panels-container .design-gradient {
