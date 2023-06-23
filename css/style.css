@@ -1371,8 +1371,8 @@ canvas {
 
 .keep-inline img {
     height: 100px;
-    opacity: 0.2;
-    padding-right: 1rem;
+    opacity: 5%;
+    padding-right: 3rem;
 }
 
 /***** The important stuff *****/
