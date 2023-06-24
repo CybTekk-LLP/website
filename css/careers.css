@@ -238,3 +238,22 @@ input[type="radio"] {
 .content {
     margin-top: calc(30vh + 4rem);
 }
+
+
+
+.dropzone {
+    line-height: 1.4rem;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: var(--platinum);
+    background: #111;
+    border-radius: 5px;
+    border: 2px dashed var(--pink);
+    border-image: none;
+    width: 100%;
+    min-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}

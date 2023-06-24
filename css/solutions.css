@@ -107,7 +107,7 @@
 }
 
 .container-solution .design-gradient {
-    font-size: calc(18px + 2.2vw) !important;
+    font-size: clamp(10px, calc(18px + 2.2vw), 50px) !important;
 }
 
 #panels-container .design-gradient {
