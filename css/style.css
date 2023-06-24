@@ -1374,12 +1374,15 @@ canvas {
     white-space: nowrap;
     height: 100px;
     margin: 100px 0;
+    width: 100vw;
 }
 
-.keep-inline img {
+.keep-inline .big-img {
     height: 100px;
-    opacity: 5%;
-    padding-right: 3rem;
+    background-image: url("../svg/band.svg");
+    background-repeat: repeat-x;
+    background-size: 100px auto;
+    background-position: center;
 }
 
 /***** The important stuff *****/
