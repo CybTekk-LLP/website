@@ -345,13 +345,31 @@
             <label id="email-label" class="row-label" for="email">Email:</label>
             <input id="email" class="row-input" type="email" placeholder="Enter your email" required>
 
+            <!-- Phone number -->
+            <label for="number" class="row-label" id="number-label">Contact No:</label>
+            <input id="number" class="row-input" type="number" name="number" placeholder="0123456789" min="0"
+                max="100000000" required>
+
+            <!-- position applied -->
+            <label class="row-label" for="dropdown2">Position applied for:</label>
+            <select id="dropdown2" class="row-input" required>
+                <option disabled selected>Select an option</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="UXE">UX Engineer</option>
+                <option value="UI/UX">UI/UX Designer</option>
+                <option value="Marketing">Digital Marketing</option>
+                <option value="Content">Content Creator</option>
+                <option value="ns">No specified</option>
+            </select>
+
             <!-- education dropdown -->
             <label class="row-label" for="dropdown">Level of education:</label>
             <select id="dropdown" class="row-input" required>
                 <option disabled selected>Select an option</option>
                 <option value="ungrad">Undergraduate</option>
                 <option value="grad">Graduate</option>
-                <option value="phd">Doctor of Philosophy (P.hD)</option>
+                <option value="phd">Doctor of Philosophy (P.hD.)</option>
                 <option value="ns">No specified</option>
             </select>
 
