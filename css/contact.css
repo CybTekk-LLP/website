@@ -154,6 +154,17 @@ button:hover,
     section.contact-us #contacts * {
         max-width: 80vw;
     }
+
+    .btn {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    h3.subtagcontact {
+        text-align: center !important;
+        padding-right: 0 !important;
+    }
 }
 
 h3.subtagline {
@@ -191,6 +202,10 @@ h3.della {
         line-height: 1.7;
     }
 
+    .article-container {
+        transform: translateX(20px);
+    }
+
     .della-contact p {
         line-height: 2.8;
     }
@@ -201,4 +216,23 @@ h3.della {
         padding-left: 0;
     }
 
+}
+
+.content {
+    margin-top: calc(30vh + 4rem);
+}
+
+
+.design-gradient {
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem !important;
+}
+
+.article-container {
+    display: flex;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }

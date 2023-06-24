@@ -21,6 +21,7 @@
 
 .content {
     top: 0 !important;
+
 }
 
 .logo {
@@ -46,7 +47,6 @@
 .design-gradient {
     font-size: calc(0.5vw + 2rem);
     font-weight: bold;
-    padding: 2rem 4rem;
 }
 
 h3.subtagline {
@@ -477,16 +477,30 @@ p.detail {
     .content-container {
         transform: translateY(calc(-50vh + 1rem));
     }
+
+    #industries h3.subtagline,
+    .timeline h3.subtagline {
+        text-align: center;
+    }
 }
 
 #industries h3.subtagline,
 .timeline h3.subtagline {
-    font-size: calc(18px + 0.4vw) !important;
+    font-size: calc(14px + 0.4vw) !important;
 }
 
 @media screen and (orientation:landscape) {
     #industries h1 {
         font-size: calc(16px + 2vw) !important;
+    }
+
+    .design-gradient {
+        padding: 2rem 4rem 4rem 0;
+    }
+
+
+    .content {
+        margin-top: 25vh;
     }
 }
 

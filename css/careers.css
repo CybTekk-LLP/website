@@ -234,3 +234,7 @@ input[type="radio"] {
     margin-right: 0.5rem;
     transform: translateY(0.3rem);
 }
+
+.content {
+    margin-top: calc(30vh + 4rem);
+}

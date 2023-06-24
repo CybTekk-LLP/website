@@ -106,6 +106,18 @@
 
 }
 
+.container-solution .design-gradient {
+    font-size: calc(18px + 2.2vw) !important;
+}
+
 #panels-container .design-gradient {
     padding: 0;
+}
+
+.content {
+    margin-top: calc(30vh + 4rem);
+}
+
+h3.email a.design-gradient {
+    padding: 0rem 4rem 2rem 4rem !important;
 }

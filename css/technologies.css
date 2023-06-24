@@ -26,14 +26,21 @@
     text-align: left !important;
     padding-left: 0;
     padding-bottom: 1rem;
+    padding-right: 0;
 }
 
 .techcard img {
     height: 50px;
     width: auto;
+    text-align: left;
+
     padding-left: 10px;
     margin-bottom: 15px;
     opacity: 0.4;
+}
+
+.techcard ul {
+    text-align: left;
 }
 
 @media screen and (orientation:portrait) and (max-width: 760px) {
@@ -71,4 +78,8 @@
     .techcard p {
         font-size: calc(0.5rem + 0.8vw);
     } */
+}
+
+.content {
+    margin-top: calc(30vh + 4rem);
 }
