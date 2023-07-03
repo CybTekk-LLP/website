@@ -428,7 +428,10 @@ details[open] summary:after {
     -o-transition: all 1s ease;
     transition: all 1s ease;
     background-color: rgba(13, 24, 33, 0.2);
-    backdrop-filter: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border-radius: 50%;
 }
 
