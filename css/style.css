@@ -1523,6 +1523,17 @@ canvas {
     background-color: #000;
 }
 
+svg.products-image {
+    position: absolute;
+    opacity: 0.1 !important;
+    right: 0;
+    top: 0;
+    width: 20% !important;
+    transform: scale(3) rotate(60deg);
+    border-radius: 30px;
+    object-fit: cover;
+}
+
 #about .left-article h3.subtagline {
     text-transform: uppercase !important;
 }
