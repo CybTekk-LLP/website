@@ -1,5 +1,19 @@
 const lenis2 = new Lenis();
 
+gsap.registerPlugin(ScrollTrigger);
+
+// Setup
+const scroller = document.querySelector("#home");
+
+ScrollTrigger.scrollerProxy("#home", {
+  scrollTop(value) {
+    if (arguments.length) {
+      scroller.scrollTop = value;
+    }
+    return scroller.scrollTop;
+  },
+});
+
 const timeline = gsap.timeline({
   scrollTrigger: {
     trigger: "#home",
