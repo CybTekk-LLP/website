@@ -22,6 +22,9 @@ const timeline = gsap.timeline({
     duration: 0.1,
     scrub: true,
     pin: true,
+    immediateRender: false,
+    preventOverlaps: true,
+    fastScrollEnd: true,
   },
 });
 
