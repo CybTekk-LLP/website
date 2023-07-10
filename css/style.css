@@ -1505,6 +1505,23 @@ canvas {
     }
 }
 
+.swiper-slide-image {
+    transform: translateY(-22px) scale(1.4);
+    opacity: 0.2;
+}
+
+.swiper-slide-image~h3.subtagline {
+    transform: translateZ(5px);
+    pointer-events: none;
+}
+
+.swiper-slide-image~h3.subtagline span {
+    color: var(--pink);
+}
+
+.swiper-slide-image~h3.subtagline span {
+    background-color: #000;
+}
 
 #about .left-article h3.subtagline {
     text-transform: uppercase !important;

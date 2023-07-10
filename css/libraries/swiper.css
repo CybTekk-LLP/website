@@ -250,7 +250,8 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-virtual .swiper-slide {
     -webkit-backface-visibility: hidden;
-    transform: translateZ(0)
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .swiper-virtual.swiper-css-mode .swiper-wrapper::after {
@@ -559,6 +560,7 @@ button.swiper-pagination-bullet {
     border-radius: var(--swiper-scrollbar-border-radius, 10px);
     position: relative;
     -ms-touch-action: none;
+    touch-action: none;
     background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1))
 }
 
