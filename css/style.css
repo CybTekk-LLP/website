@@ -50,6 +50,86 @@ html.lenis {
     pointer-events: none;
 }
 
+/* .scroll-down {
+    position: absolute;
+    font-size: 50px;
+    color: var(--platinum);
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%) rotate(90deg);
+    font-size: clamp(2.8rem, 1.5vw, 3rem);
+    font-weight: bold;
+    margin: 5px;
+    background: linear-gradient(to left,
+            var(--platinum) 20%,
+            grey 30%,
+            var(--white) 70%,
+            grey 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 50% 100%;
+    }
+} */
+
+
+
+.field {
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    bottom: 0;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
+}
+
+.mouse {
+    width: 50px;
+    height: 90px;
+    border: 6px solid #191919;
+    border-radius: 60px;
+    position: relative;
+    transform: scale(0.7) translateX(-50%);
+
+    &::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #191919;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel 2s infinite;
+        -webkit-animation: wheel 2s infinite;
+    }
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
 
 .skewEm {
     -webkit-transition: all 0.6s ease-in-out;

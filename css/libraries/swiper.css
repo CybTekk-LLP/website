@@ -426,7 +426,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-    cursor: url(/images/Cursor.png), pointer;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 .swiper-pagination-bullet {
