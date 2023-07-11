@@ -1,3 +1,33 @@
+var state = history.state || {};
+let widthScreen = window.innerWidth;
+let heightScreen = window.innerHeight;
+var reloadCount = state.reloadCount || 0;
+
+if (PerformanceNavigationTiming.type === 1) {
+  // Reload
+  state.reloadCount = ++reloadCount;
+  history.replaceState(state, null, document.URL);
+} else if (reloadCount) {
+  reloadCount = 0;
+  delete state.reloadCount;
+  history.replaceState(state, null, document.URL);
+}
+
+//refresh page on browser resize
+var prevWidth = window.innerWidth;
+$(window).bind("resize", function (e) {
+  console.log("window resized..");
+  widthScreen = window.innerWidth;
+  heightScreen = window.innerHeight;
+  if (
+    window.matchMedia("(orientation: landscape)").matches &&
+    window.innerWidth !== prevWidth
+  ) {
+    this.location.reload(false); /* false to get page from cache */
+    /* true to fetch page from server */
+  }
+});
+
 const lenis2 = new Lenis();
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,14 +59,14 @@ const timeline = gsap.timeline({
 });
 
 const circleExpandProps = {
-  borderWidth: "2vh",
+  borderWidth: `${(2 / 100) * heightScreen}`,
   duration: 0.2,
-  x: "-52.5vh",
-  y: "-20vh",
+  x: `${(-52.5 / 100) * heightScreen}`,
+  y: `${(-20 / 100) * heightScreen}`,
   opacity: 0,
   width: "220%",
-  height: "135vh",
-  left: "17.5vw",
+  height: `${(135 / 100) * heightScreen}`,
+  left: `${(17.5 / 100) * widthScreen}`,
 };
 
 timeline.fromTo(
@@ -45,8 +75,8 @@ timeline.fromTo(
   {
     ...circleExpandProps,
     width: "260%",
-    height: "165vh",
-    left: "13.5vw",
+    height: `${(165 / 100) * heightScreen}`,
+    left: `${(13.5 / 100) * widthScreen}`,
   }
 );
 timeline.fromTo(".circle-2", {}, circleExpandProps, "<");
@@ -56,7 +86,7 @@ timeline.fromTo(
   {
     ...circleExpandProps,
     width: "150%",
-    height: "100vh",
+    height: `${(100 / 100) * heightScreen}`,
     left: "350px",
     opacity: 1,
     borderRadius: 0,

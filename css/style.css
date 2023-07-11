@@ -534,7 +534,7 @@ details[open] summary:after {
     height: 100vh;
     position: fixed;
     pointer-events: none;
-    z-index: 4;
+    z-index: 3;
 }
 
 .background span {
@@ -1472,12 +1472,15 @@ canvas {
 .swiper .swiper-slide .slide {
     background-color: black;
     border-radius: 20px;
+    box-sizing: border-box;
     padding: 50px;
     width: 70%;
     height: 100%;
     margin: auto;
+    position: relative;
     align-self: center;
     min-height: 450px;
+    overflow-x: hidden;
 }
 
 @media screen and (orientation:portrait) {
@@ -1506,12 +1509,15 @@ canvas {
 }
 
 .swiper-slide-image {
-    transform: translateY(-22px) scale(1.4);
-    opacity: 0.2;
+    transform: translate(-100%, -100%) scale(5.0);
+    opacity: 0.1;
+    right: 0;
+    object-fit: contain;
+    bottom: 0;
+    pointer-events: none;
 }
 
 .swiper-slide-image~h3.subtagline {
-    transform: translateZ(5px);
     pointer-events: none;
 }
 
@@ -1528,9 +1534,7 @@ svg.products-image {
     opacity: 0.1 !important;
     right: 0;
     top: 0;
-    width: 20% !important;
-    transform: scale(3) rotate(60deg);
-    border-radius: 30px;
+    transform: rotate(-120deg) translateY(100%) scale(1.1);
     object-fit: cover;
 }
 
@@ -1550,6 +1554,10 @@ h3.subtagline.email {
     text-transform: lowercase !important;
 } */
 
+.logo-image {
+    width: 180px !important;
+    opacity: 1 !important;
+}
 
 
 .menu-footer svg.twitter:hover path,
@@ -1567,4 +1575,92 @@ h3.subtagline.email {
 .menu-footer svg.linkedin:hover path,
 .footer svg.linkedin:hover path {
     fill: #0a66c2;
+}
+
+.soapBubble {
+    z-index: -1;
+    position: relative;
+    width: 70vmin;
+    height: 70vmin;
+    outline: 0 solid rgba(0, 0, 0, .7);
+    transition: 3s;
+    opacity: 0.1;
+}
+
+.soapBubble div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.bubbleImg {
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, .5);
+    transition: 3s;
+    background-image:
+        url("data:image/svg+xml;utf8, <svg width='100' height='100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='50' fill='none'/><circle cx='24' cy='24' r='7.5' fill='white' style='filter:blur(.5px)'/><path d='M78 58.4999C69.5 72.4999 56 78.4999 53.5 80.9999C51 83.4999 50 89.9999 59.5 87.4999C69 84.9999 82.5 76.4999 86.5 67.4999C90.5 58.5 86.5 44.5 78 58.4999Z' fill='rgba(255,255,255,.9)' style='filter:blur(0px)'/></svg>"),
+        radial-gradient(circle at 70% 96%, white .5%, rgba(255, 255, 200, .4) 2%, transparent 9%),
+        radial-gradient(at 30% 20%, white 1%, rgba(255, 255, 200, 1) 2%, transparent 20%, transparent 50%, rgba(0, 200, 200, .3) 73%, rgba(0, 80, 80, .3) 84%),
+        radial-gradient(circle at 0% 0%, rgba(255, 0, 255, .7) 2%, transparent 80%);
+    background-size: cover;
+}
+
+.deformX {
+    animation-name: deformX;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes deformX {
+    0% {
+        transform: none;
+    }
+
+    25% {
+        transform: scaleX(0.5) skewX(10deg)
+    }
+
+    50% {
+        transform: none
+    }
+
+    75% {
+        transform: scaleX(0.5) skewX(-10deg)
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.deformY {
+    animation-name: deformY;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes deformY {
+    0% {
+        transform: none;
+    }
+
+    25% {
+        transform: scaleY(0.5) skewY(10deg)
+    }
+
+    50% {
+        transform: none
+    }
+
+    75% {
+        transform: scaleY(0.5) skewY(-10deg)
+    }
+
+    100% {
+        transform: none;
+    }
 }
