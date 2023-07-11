@@ -114,23 +114,24 @@ span.hide-on-phone {
     border: 10px solid rgb(25, 25, 25);
     border-radius: 1000vh;
     z-index: -1;
+    will-change: opacity;
 }
 
 .circle-1 {
     top: -10vh;
-    right: -70vh;
+    right: -60vh;
 }
 
 .circle-2 {
     width: 90vh;
     top: 5vh;
-    right: -55vh;
+    right: -180vh;
 }
 
 .circle-3 {
-    width: 60vh;
-    top: 20vh;
-    right: -40vh;
+    width: 80vh;
+    top: 10vh;
+    right: -170vh;
     background: rgb(25, 25, 25);
     ;
 }

@@ -37,6 +37,34 @@
     margin-left: 40vw;
 }
 
+@media screen and (orientation:portrait) {
+    #panels-container {
+        width: 100vw;
+        margin-bottom: 10vh;
+    }
+
+    #panel-1 {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .panel {
+        display: flex;
+        float: none;
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 10vh;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        float: none;
+    }
+
+    #panels .container-solution {
+        height: 100%;
+    }
+}
+
 #panels .panel h2 {
 
     text-align: left;

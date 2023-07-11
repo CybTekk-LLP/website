@@ -65,8 +65,8 @@ const circleExpandProps = {
   y: `${(-20 / 100) * heightScreen}`,
   opacity: 0,
   width: "220%",
-  height: `${(135 / 100) * heightScreen}`,
-  left: `${(17.5 / 100) * widthScreen}`,
+  height: `${(175 / 100) * heightScreen}`,
+  x: `${(-60.5 / 100) * widthScreen}`,
 };
 
 timeline.fromTo(
@@ -76,7 +76,7 @@ timeline.fromTo(
     ...circleExpandProps,
     width: "260%",
     height: `${(165 / 100) * heightScreen}`,
-    left: `${(13.5 / 100) * widthScreen}`,
+    x: `${(13.5 / 100) * widthScreen}`,
   }
 );
 timeline.fromTo(".circle-2", {}, circleExpandProps, "<");
@@ -86,8 +86,8 @@ timeline.fromTo(
   {
     ...circleExpandProps,
     width: "150%",
-    height: `${(100 / 100) * heightScreen}`,
-    left: "350px",
+    height: `${(115 / 100) * heightScreen}`,
+    x: `${(-70 / 100) * widthScreen}`,
     opacity: 1,
     borderRadius: 0,
   },

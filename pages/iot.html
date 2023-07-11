@@ -417,7 +417,19 @@
     <script src='../libraries/scrollplugin.js'></script>
 
     <script src='../libraries/locomotive.js'></script>
-    <script src="../js/horizontal-scroll.js"></script>
+    <script src="../js/reload.js"></script>
+    <script>
+            (function () {
+                if (window.matchMedia("(orientation: landscape)").matches) {
+                    var theScript = document.createElement('script');
+                    theScript.type = 'text/javascript';
+                    theScript.src = '../js/horizontal-scroll.js';
+
+                    var head = document.getElementsByTagName('head')[0];
+                    head.appendChild(theScript);
+                }
+            })();
+    </script>
     <script src="../js/preloader.js"></script>
 
 </body>
