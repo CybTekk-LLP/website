@@ -77,6 +77,7 @@ const timeline = gsap.timeline({
     immediateRender: false,
     preventOverlaps: true,
     fastScrollEnd: true,
+    ease: "Power1",
   },
 });
 
