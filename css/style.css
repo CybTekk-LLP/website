@@ -88,7 +88,7 @@ html.lenis {
     position: fixed;
     left: calc(50% - 18px);
     width: 50px;
-    bottom: 0;
+    bottom: calc(5vh - 25px);
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
     transform: scale(0.6);
 }
@@ -240,14 +240,19 @@ span.hide-on-phone {
 
 .circle {
     position: absolute !important;
-    aspect-ratio: 1 / 1;
-    width: 120vh;
-    border: 10px solid rgb(25, 25, 25);
-    border-radius: 1000vh;
+    height: 100vh;
+    width: 100vw;
+    left: 100%;
+    transform: translateX(calc(-30vw - 200px));
+    /* border: 10px solid rgb(25, 25, 25); */
+    /* border-radius: 1000vh; */
     z-index: -1;
+    background-image: url("data:image/svg+xml,%3Csvg width='1658' height='844' viewBox='0 0 1658 844' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='213' y='191' width='1211' height='449' rx='224.5' fill='%23191919'/%3E%3Crect x='111' y='95' width='1440' height='640' rx='320' stroke='%23191919' stroke-width='20'/%3E%3Crect x='10' y='10' width='1638' height='824' rx='412' stroke='%23191919' stroke-width='20'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.circle-1 {
+/* .circle-1 {
     top: -10vh;
     right: -70vh;
 }
@@ -264,7 +269,7 @@ span.hide-on-phone {
     right: -40vh;
     background: rgb(25, 25, 25);
     ;
-}
+} */
 
 
 #menu {
@@ -1621,6 +1626,10 @@ canvas {
 }
 
 @media screen and (orientation:portrait) and (max-width:768px) {
+    .field {
+        transform: scale(0.4);
+    }
+
     .swiper .swiper-slide {
         width: 150vw;
     }

@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener(`scroll`, function (e) {
-  const scroll_Y = (this.scrollY / 1000) * 2;
+  const scroll_Y = (this.scrollY / 1000) * 5;
   let home = document.querySelector("#home .left");
   if (scroll_Y === 0) {
     home.style.opacity = 1;
