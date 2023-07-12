@@ -63,6 +63,7 @@ ScrollTrigger.scrollerProxy(document.body, {
 });
 
 ScrollTrigger.defaults({ scroller: document.body });
+ScrollTrigger.config({ ignoreMobileResize: true, smooth: true });
 
 window.addEventListener("resize", resize);
 
@@ -78,40 +79,53 @@ const timeline = gsap.timeline({
     preventOverlaps: true,
     fastScrollEnd: true,
     ease: "Power1",
-    ignoreMobileResize: true,
   },
 });
 
 const circleExpandProps = {
   borderWidth: `${(2 / 100) * heightScreen}`,
   duration: 0.2,
-  x: `${(-52.5 / 100) * heightScreen}`,
   y: `${(-20 / 100) * heightScreen}`,
   opacity: 0,
   width: "220%",
   height: `${(135 / 100) * heightScreen}`,
-  left: `${(17.5 / 100) * widthScreen}`,
 };
 
 timeline.fromTo(
   ".circle-1",
-  {},
+  {
+    x: 0,
+  },
   {
     ...circleExpandProps,
     width: "260%",
     height: `${(165 / 100) * heightScreen}`,
-    left: `${(13.5 / 100) * widthScreen}`,
+    x: `-${(80 / 100) * widthScreen}`,
   }
 );
-timeline.fromTo(".circle-2", {}, circleExpandProps, "<");
+timeline.fromTo(
+  ".circle-2",
+  {
+    x: `${(15 / 100) * widthScreen}`,
+  },
+  {
+    x: `-${(80 / 100) * widthScreen}`,
+    width: "220%",
+    height: `${(150 / 100) * heightScreen}`,
+    opacity: 0,
+    y: `-${0.2 * heightScreen}`,
+  },
+  "<"
+);
 timeline.fromTo(
   ".circle-3",
-  {},
   {
-    ...circleExpandProps,
+    x: 30 * widthScreen,
+  },
+  {
+    x: `-${0.8 * heightScreen}`,
     width: "150%",
     height: `${(120 / 100) * heightScreen}`,
-    left: "350px",
     opacity: 1,
     borderRadius: 0,
   },
@@ -124,7 +138,7 @@ window.addEventListener("resize", function () {
 gsap.ticker.add(update);
 
 lenis2.on("scroll", (e) => {
-  ScrollTrigger.update;
+  ScrollTrigger.update();
 });
 
 // ScrollTrigger.normalizeScroll(true);

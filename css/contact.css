@@ -87,7 +87,7 @@ textarea {
 
 #form-submit {
     position: relative;
-    display: inline-block;
+    display: block;
     float: right;
     font-size: 12px;
     font-weight: bold;

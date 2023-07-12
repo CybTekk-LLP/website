@@ -36,7 +36,7 @@ function slide_up(start, end) {
 }
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
-
+ScrollTrigger.config({ ignoreMobileResize: true, smooth: true });
 /* Main navigation */
 
 let panelsContainer = document.querySelector("#panels-container"),
