@@ -86,8 +86,8 @@ details.forEach((targetDetail) => {
   });
 });
 
-if (window.matchMedia("(orientation: landscape)").matches) {
-  details.forEach((detail) => {
-    detail.open = true;
-  });
-}
+// if (window.matchMedia("(orientation: landscape)").matches) {
+//   details.forEach((detail) => {
+//     detail.open = true;
+//   });
+// }
