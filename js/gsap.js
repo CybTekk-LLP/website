@@ -121,7 +121,7 @@ let circle = document.querySelector(".circle");
 window.addEventListener("resize", function () {
   scrollTrigger.refresh();
 });
-// gsap.ticker.add(update);
+gsap.ticker.add(update);
 
 lenis2.on("scroll", (e) => {
   ScrollTrigger.update;
