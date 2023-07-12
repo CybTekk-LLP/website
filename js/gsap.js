@@ -15,7 +15,6 @@ if (PerformanceNavigationTiming.type === 1) {
 
 ScrollTrigger.config({
   ignoreMobileResize: true,
-  normalizeScroll: true,
   force3d: true,
 });
 
@@ -48,7 +47,7 @@ const update = (time, deltaTime, frame) => {
   lenis2.raf(time * 1000);
 };
 
-// Setup
+// Setup;
 const scroller = document.querySelector("#home");
 
 ScrollTrigger.scrollerProxy(document.body, {
@@ -76,14 +75,11 @@ const timeline = gsap.timeline({
   scrollTrigger: {
     trigger: "#home",
     start: "top top",
-    end: "+=125%",
-    duration: 0.1,
+    end: "+=105%",
+    duration: 1,
     scrub: true,
     pin: true,
-    immediateRender: false,
-    preventOverlaps: true,
-    fastScrollEnd: true,
-    ease: "Power1",
+    // immediateRender: false,
   },
 });
 
@@ -103,7 +99,7 @@ timeline.fromTo(
 timeline.fromTo(
   ".circle-2",
   {
-    x: `${0.15 * widthScreen - (widthScreen < 1000 ? 200 : 0)}`,
+    x: `${0.15 * widthScreen - (widthScreen < 1000 ? 170 : 0)}`,
   },
   {
     x: `-${1.5 * widthScreen}`,
@@ -117,7 +113,7 @@ timeline.fromTo(
 timeline.fromTo(
   ".circle-3",
   {
-    x: 0.3 * widthScreen - (widthScreen < 1000 ? 200 : 0),
+    x: 0.3 * widthScreen - (widthScreen < 1000 ? 140 : 0),
   },
   {
     x: `-${1 * widthScreen}`,
@@ -139,7 +135,6 @@ lenis2.on("scroll", (e) => {
   ScrollTrigger.update();
 });
 
-ScrollTrigger.normalizeScroll(true);
 // ScrollTrigger.ignoreMobileResize(true);
 
 const elScrollable = document.querySelector("html");
