@@ -1038,6 +1038,24 @@ canvas {
     text-transform: uppercase;
 }
 
+.anchor-gradient {
+    display: block;
+    color: transparent;
+    background: -webkit-linear-gradient(to right, var(--pink) 0%, var(--blue) 25%, var(--pink) 50%, var(--blue) 75%, var(--pink) 100%);
+    background: linear-gradient(to right, var(--pink) 0%, var(--blue) 25%, var(--pink) 50%, var(--blue) 75%, var(--pink) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    text-transform: uppercase;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 400;
+}
+
 .design-gradient span {
     margin-left: 0;
     margin-right: 2px;
