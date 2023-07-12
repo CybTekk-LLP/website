@@ -84,54 +84,101 @@ html.lenis {
 } */
 
 
-
 .field {
     position: fixed;
     left: 50%;
     width: 50px;
     bottom: 0;
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
+    transform: scale(0.6);
 }
 
 .field.is-hidden {
     display: none;
 }
 
-.mouse {
+.arrow {
     width: 50px;
-    height: 90px;
-    border: 6px solid #191919;
-    border-radius: 60px;
-    position: relative;
-    transform: scale(0.7) translateX(-50%);
+    height: 50px;
+    border: 8px solid var(--white);
+    border-color: var(--white) transparent transparent var(--white);
+    opacity: 0.6;
+    transform: rotate(-135deg) scale(0.7) translateX(50%);
 }
 
-.mouse::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #191919;
+.circleArrow {
+    width: 0;
+    height: 0;
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 8px solid var(--white);
+    opacity: 0.6;
     border-radius: 50%;
-    opacity: 1;
-    animation: wheel 2s infinite;
-    -webkit-animation: wheel 2s infinite;
+    transform: translateY(50%);
 }
 
-@keyframes wheel {
-    to {
+.arrowSliding {
+    /* position: absolute; */
+    -webkit-animation: slideCircle 4s linear infinite;
+    animation: slideCircle 4s linear infinite;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.delay3 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slideCircle {
+    0% {
         opacity: 0;
-        top: 60px;
+        /* transform: translateX(15vw); */
+    }
+
+    20% {
+        opacity: 0.6;
+        /* transform: translateX(9vw); */
+    }
+
+    80% {
+        opacity: 0.6;
+        /* transform: translateX(-9vw); */
+    }
+
+    100% {
+        opacity: 0;
+        /* transform: translateX(-15vw); */
     }
 }
 
-@-webkit-keyframes wheel {
-    to {
+@keyframes slideCircle {
+    0% {
         opacity: 0;
-        top: 60px;
+        /* transform: translateX(15vw); */
+    }
+
+    20% {
+        opacity: 0.6;
+        /* transform: translateX(9vw); */
+    }
+
+    80% {
+        opacity: 0.6;
+        /* transform: translateX(-9vw); */
+    }
+
+    100% {
+        opacity: 0;
+        /* transform: translateX(-15vw); */
     }
 }
 
