@@ -86,7 +86,7 @@ html.lenis {
 
 .field {
     position: fixed;
-    left: 50%;
+    left: calc(50% - 18px);
     width: 50px;
     bottom: 0;
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
