@@ -78,6 +78,7 @@ const timeline = gsap.timeline({
     preventOverlaps: true,
     fastScrollEnd: true,
     ease: "Power1",
+    ignoreMobileResize: true,
   },
 });
 
@@ -109,7 +110,7 @@ timeline.fromTo(
   {
     ...circleExpandProps,
     width: "150%",
-    height: `${(100 / 100) * heightScreen}`,
+    height: `${(120 / 100) * heightScreen}`,
     left: "350px",
     opacity: 1,
     borderRadius: 0,
@@ -120,11 +121,25 @@ let circle = document.querySelector(".circle");
 window.addEventListener("resize", function () {
   scrollTrigger.refresh();
 });
-gsap.ticker.add(update);
+// gsap.ticker.add(update);
 
 lenis2.on("scroll", (e) => {
   ScrollTrigger.update;
 });
 
-ScrollTrigger.normalizeScroll(true);
-ScrollTrigger.ignoreMobileResize(true);
+// ScrollTrigger.normalizeScroll(true);
+// ScrollTrigger.ignoreMobileResize(true);
+
+const elScrollable = document.querySelector("html");
+const elNav = document.querySelector(".field");
+
+const handleNav = () => {
+  const viewportHeight = window.innerHeight;
+  const scrollTop = elScrollable.scrollTop;
+  // elNav.textContent = `Scrolled: ${scrollTop / viewportHeight}`;
+  elNav.classList.toggle("is-hidden", scrollTop >= viewportHeight);
+};
+
+addEventListener("scroll", handleNav);
+addEventListener("resize", handleNav);
+handleNav();

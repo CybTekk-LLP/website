@@ -86,11 +86,15 @@ html.lenis {
 
 
 .field {
-    position: absolute;
+    position: fixed;
     left: 50%;
     width: 50px;
     bottom: 0;
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
+}
+
+.field.is-hidden {
+    display: none;
 }
 
 .mouse {
@@ -100,21 +104,21 @@ html.lenis {
     border-radius: 60px;
     position: relative;
     transform: scale(0.7) translateX(-50%);
+}
 
-    &::before {
-        content: '';
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #191919;
-        border-radius: 50%;
-        opacity: 1;
-        animation: wheel 2s infinite;
-        -webkit-animation: wheel 2s infinite;
-    }
+.mouse::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #191919;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
 }
 
 @keyframes wheel {
@@ -1559,7 +1563,7 @@ canvas {
     position: relative;
     align-self: center;
     min-height: 450px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @media screen and (orientation:portrait) {
