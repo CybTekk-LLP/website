@@ -1,11 +1,5 @@
 const lenis3 = new Lenis();
 
-ScrollTrigger.config({
-  ignoreMobileResize: true,
-  force3d: true,
-  normalizeScroll: true,
-});
-
 const timeline3 = gsap.timeline({
   scrollTrigger: {
     trigger: "#design",

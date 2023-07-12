@@ -54,3 +54,12 @@ window.addEventListener("resize", function () {
 lenis2.on("scroll", (e) => {
   ScrollTrigger.update;
 });
+
+const handleNav = () => {
+  const viewportHeight = window.innerHeight;
+  const scrollTop = elScrollable.scrollTop;
+  // elNav.textContent = `Scrolled: ${scrollTop / viewportHeight}`;
+  elNav.classList.toggle("is-hidden", scrollTop >= viewportHeight);
+};
+
+handleNav();

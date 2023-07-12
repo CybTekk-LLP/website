@@ -260,10 +260,16 @@ input[type="radio"] {
 
 .leadership-list {
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .leadership img {
+    position: absolute;
     border-radius: 20px;
+    transform: translate(-50%, -50%);
     /* border: #ccc 1px solid; */
+}
+
+.leadership.JobsCard {
+    margin-bottom: 130px;
 }

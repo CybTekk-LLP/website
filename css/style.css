@@ -243,25 +243,29 @@ span.hide-on-phone {
     aspect-ratio: 1 / 1;
     width: 120vh;
     border: 10px solid rgb(25, 25, 25);
-    will-change: transform;
     border-radius: 1000vh;
     z-index: -1;
 }
 
 .circle-1 {
     top: -10vh;
+    right: -70vh;
 }
 
 .circle-2 {
     width: 90vh;
     top: 5vh;
+    right: -55vh;
 }
 
 .circle-3 {
     width: 60vh;
     top: 20vh;
+    right: -40vh;
     background: rgb(25, 25, 25);
+    ;
 }
+
 
 #menu {
     background: rgba(20, 20, 20, 0.9);
