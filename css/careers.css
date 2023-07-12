@@ -262,3 +262,8 @@ input[type="radio"] {
     list-style: none;
     text-align: center;
 }
+
+.leadership img {
+    border-radius: 20px;
+    border: #ccc 1px solid;
+}

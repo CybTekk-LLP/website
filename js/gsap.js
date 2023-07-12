@@ -13,12 +13,18 @@ if (PerformanceNavigationTiming.type === 1) {
   history.replaceState(state, null, document.URL);
 }
 
+ScrollTrigger.config({
+  ignoreMobileResize: true,
+  normalizeScroll: true,
+  force3d: true,
+});
+
 //refresh page on browser resize
 var prevWidth = window.innerWidth;
 $(window).bind("resize", function (e) {
   console.log("window resized..");
   widthScreen = window.innerWidth;
-  heightScreen = window.innerHeight;
+  heightScreen = window.clientHeight;
   if (
     window.matchMedia("(orientation: landscape)").matches &&
     window.innerWidth !== prevWidth
@@ -63,7 +69,6 @@ ScrollTrigger.scrollerProxy(document.body, {
 });
 
 ScrollTrigger.defaults({ scroller: document.body });
-ScrollTrigger.config({ ignoreMobileResize: true, smooth: true });
 
 window.addEventListener("resize", resize);
 
@@ -71,7 +76,7 @@ const timeline = gsap.timeline({
   scrollTrigger: {
     trigger: "#home",
     start: "top top",
-    end: "+=105%",
+    end: "+=125%",
     duration: 0.1,
     scrub: true,
     pin: true,
@@ -82,37 +87,29 @@ const timeline = gsap.timeline({
   },
 });
 
-const circleExpandProps = {
-  borderWidth: `${(2 / 100) * heightScreen}`,
-  duration: 0.2,
-  y: `${(-20 / 100) * heightScreen}`,
-  opacity: 0,
-  width: "220%",
-  height: `${(135 / 100) * heightScreen}`,
-};
-
+console.log(heightScreen);
 timeline.fromTo(
   ".circle-1",
   {
-    x: 0,
+    x: `${0 * widthScreen - (widthScreen < 1000 ? 200 : 0)}`,
   },
   {
-    ...circleExpandProps,
     width: "260%",
-    height: `${(165 / 100) * heightScreen}`,
-    x: `-${(80 / 100) * widthScreen}`,
+    height: `${1.65 * heightScreen}`,
+    x: `-${2 * widthScreen}`,
+    y: `${(-20 / 100) * heightScreen}`,
   }
 );
 timeline.fromTo(
   ".circle-2",
   {
-    x: `${(15 / 100) * widthScreen}`,
+    x: `${0.15 * widthScreen - (widthScreen < 1000 ? 200 : 0)}`,
   },
   {
-    x: `-${(80 / 100) * widthScreen}`,
+    x: `-${1.5 * widthScreen}`,
     width: "220%",
-    height: `${(150 / 100) * heightScreen}`,
-    opacity: 0,
+    height: `${1.5 * heightScreen}`,
+    // opacity: 0,
     y: `-${0.2 * heightScreen}`,
   },
   "<"
@@ -120,14 +117,15 @@ timeline.fromTo(
 timeline.fromTo(
   ".circle-3",
   {
-    x: 30 * widthScreen,
+    x: 0.3 * widthScreen - (widthScreen < 1000 ? 200 : 0),
   },
   {
-    x: `-${0.8 * heightScreen}`,
+    x: `-${1 * widthScreen}`,
     width: "150%",
-    height: `${(120 / 100) * heightScreen}`,
+    height: `${1 * heightScreen}`,
     opacity: 1,
     borderRadius: 0,
+    y: -0.2 * heightScreen,
   },
   "<"
 );
@@ -141,7 +139,7 @@ lenis2.on("scroll", (e) => {
   ScrollTrigger.update();
 });
 
-// ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.normalizeScroll(true);
 // ScrollTrigger.ignoreMobileResize(true);
 
 const elScrollable = document.querySelector("html");

@@ -1,3 +1,9 @@
+ScrollTrigger.config({
+  ignoreMobileResize: true,
+  force3d: true,
+  normalizeScroll: true,
+});
+
 const timeline = gsap.timeline({
   scrollTrigger: {
     trigger: "#workflow",
