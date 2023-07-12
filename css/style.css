@@ -140,44 +140,44 @@ html.lenis {
 
 @-webkit-keyframes slideCircle {
     0% {
-        opacity: 0;
+        opacity: 0.6;
         /* transform: translateX(15vw); */
     }
 
     20% {
-        opacity: 0.6;
+        opacity: 0.1;
         /* transform: translateX(9vw); */
     }
 
     80% {
-        opacity: 0.6;
+        opacity: 0.1;
         /* transform: translateX(-9vw); */
     }
 
     100% {
-        opacity: 0;
+        opacity: 0.6;
         /* transform: translateX(-15vw); */
     }
 }
 
 @keyframes slideCircle {
     0% {
-        opacity: 0;
+        opacity: 0.6;
         /* transform: translateX(15vw); */
     }
 
     20% {
-        opacity: 0.6;
+        opacity: 0.1;
         /* transform: translateX(9vw); */
     }
 
     80% {
-        opacity: 0.6;
+        opacity: 0.1;
         /* transform: translateX(-9vw); */
     }
 
     100% {
-        opacity: 0;
+        opacity: 0.6;
         /* transform: translateX(-15vw); */
     }
 }
