@@ -48,26 +48,26 @@ const update = (time, deltaTime, frame) => {
 };
 
 // Setup;
-const scroller = document.querySelector("#home");
+// const scroller = document.querySelector("#home");
 
-ScrollTrigger.scrollerProxy(document.body, {
-  scrollTop(value) {
-    if (arguments.length) {
-      lenis2.scroll = value;
-    }
-    return lenis2.scroll;
-  },
-  getBoundingClientRect() {
-    return {
-      top: 0,
-      left: 0,
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
-  },
-});
+// ScrollTrigger.scrollerProxy(document.body, {
+//   scrollTop(value) {
+//     if (arguments.length) {
+//       lenis2.scroll = value;
+//     }
+//     return lenis2.scroll;
+//   },
+//   getBoundingClientRect() {
+//     return {
+//       top: 0,
+//       left: 0,
+//       width: window.innerWidth,
+//       height: window.innerHeight,
+//     };
+//   },
+// });
 
-ScrollTrigger.defaults({ scroller: document.body });
+// ScrollTrigger.defaults({ scroller: document.body });
 
 window.addEventListener("resize", resize);
 
@@ -79,6 +79,7 @@ const timeline = gsap.timeline({
     duration: 1,
     scrub: true,
     pin: true,
+    normalizeScroll: true,
     // immediateRender: false,
   },
 });
@@ -134,8 +135,6 @@ gsap.ticker.add(update);
 lenis2.on("scroll", (e) => {
   ScrollTrigger.update();
 });
-
-// ScrollTrigger.ignoreMobileResize(true);
 
 const elScrollable = document.querySelector("html");
 const elNav = document.querySelector(".field");
