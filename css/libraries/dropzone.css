@@ -242,7 +242,7 @@
     padding: 20px 20px;
 }
 
-.dropzone.dz-clickable {
+/* .dropzone.dz-clickable {
     cursor: pointer;
 }
 
@@ -253,7 +253,7 @@
 .dropzone.dz-clickable .dz-message,
 .dropzone.dz-clickable .dz-message * {
     cursor: pointer;
-}
+} */
 
 .dropzone.dz-started .dz-message {
     display: none;
@@ -314,7 +314,7 @@
     font-size: 14px;
     text-align: center;
     display: block;
-    cursor: pointer;
+    /* cursor: pointer; */
     border: none;
 }
 
@@ -471,6 +471,7 @@
     margin-left: -40px;
     background: rgba(255, 255, 255, 0.9);
     -webkit-transform: scale(1);
+    transform: scale(1);
     border-radius: 8px;
     overflow: hidden;
 }
