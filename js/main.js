@@ -17,5 +17,3 @@ window.addEventListener(`scroll`, function (e) {
     home.style.opacity = `${1 - scroll_Y}`;
   }
 });
-
-// 4 lines related to dark theme google map are commented out - 2 in js, 2 in html
