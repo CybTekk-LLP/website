@@ -94,6 +94,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    cursor: url(/images/Cursor.png), pointer;
 }
 
 
@@ -133,6 +134,7 @@
 .row-label {
     color: var(--white);
     font-weight: 600;
+    cursor: url(/images/Cursor.png), pointer;
 }
 
 .row-label:not(:first-child) {
@@ -174,7 +176,7 @@
     border: none;
     border-radius: var(--border-radius);
     font-weight: 600;
-    cursor: pointer;
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
     background-color: #111;
     text-transform: capitalize;
     -webkit-transition: all 0.5s ease;
@@ -212,6 +214,7 @@ select {
     -webkit-appearance: none;
     -o-appearance: none;
     appearance: none;
+    cursor: url(/images/Cursor.png), pointer;
 }
 
 input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button {
@@ -239,7 +242,9 @@ input[type="radio"] {
     margin-top: calc(30vh + 4rem);
 }
 
-
+#dropzone * {
+    cursor: url(/svg/Pointer.svg) 16 16, pointer;
+}
 
 .dropzone {
     line-height: 1.4rem;
