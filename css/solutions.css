@@ -149,3 +149,13 @@
 h3.email a.design-gradient {
     padding: 0rem 4rem 2rem 4rem !important;
 }
+
+.image-solution {
+    position: absolute;
+    height: 360px;
+    width: auto;
+    bottom: 40px;
+    right: 0;
+    opacity: 0.1;
+    z-index: -1;
+}
