@@ -444,7 +444,7 @@ details:not([open]) {
 }
 
 details[open] {
-    height: 10em;
+    height: 11em;
 }
 
 details#longer[open] {
