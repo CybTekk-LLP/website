@@ -14,8 +14,8 @@ var dropzone = new Dropzone("#demo-upload", {
         var thumbnailElement = images[i];
         thumbnailElement.alt = file.name;
         //  file.myCustomName = array[1] + file.name.split('.').pop();
-        console.log(file.name);
-        console.log(array);
+        // console.log(file.name);
+        // console.log(array);
         thumbnailElement.src = dataUrl;
       }
       setTimeout(function () {
@@ -55,7 +55,7 @@ dropzone.uploadFiles = function (files) {
       processData: false,
       contentType: false,
       success: function (res) {
-        console.log(res);
+        // console.log(res);
       },
       error: function (e) {
         console.error(e);

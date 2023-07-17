@@ -14,7 +14,7 @@ if (PerformanceNavigationTiming.type === 1) {
 //refresh page on browser resize
 var prevWidth = window.innerWidth;
 $(window).bind("resize", function (e) {
-  console.log("window resized..");
+  // console.log("window resized..");
   if (
     window.matchMedia("(orientation: landscape)").matches &&
     window.innerWidth !== prevWidth

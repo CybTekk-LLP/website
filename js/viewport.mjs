@@ -12,10 +12,10 @@ function isInViewport(element) {
     bounding.bottom <=
       (window.innerHeight || document.documentElement.clientHeight)
   ) {
-    console.log("In the viewport! :)");
+    // console.log("In the viewport! :)");
     return true;
   } else {
-    console.log("Not in the viewport. :(");
+    // console.log("Not in the viewport. :(");
     return false;
   }
 }
