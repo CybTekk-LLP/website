@@ -1,5 +1,6 @@
 const lenis2 = new Lenis();
 
+let height = (window.screen.height - 60) * -1;
 const timeline = gsap.timeline({
   scrollTrigger: {
     trigger: "#home",
@@ -13,7 +14,7 @@ const timeline = gsap.timeline({
 
 const circleExpandProps = {
   duration: 0.2,
-  x: "-100vh",
+  x: height.toString(),
 
   opacity: 1,
 };
@@ -23,7 +24,7 @@ timeline.fromTo(
   {},
   {
     ...circleExpandProps,
-    scale: 3,
+    scale: 3.5,
   }
 );
 

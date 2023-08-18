@@ -552,3 +552,11 @@ button.motels span {
 button.motels {
     border-color: #1398F6;
 }
+
+button.stylam span {
+    color: #e42c24;
+}
+
+button.stylam {
+    border-color: #e42c24;
+}
