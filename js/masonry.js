@@ -13,6 +13,10 @@ let $grid = $(".container").masonry({
   fitWidth: true,
 });
 
-$grid.imagesLoaded().progress(function () {
-  $grid.masonry("layout");
-});
+try {
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry("layout");
+  });
+} catch {
+  // console.error(e)
+}

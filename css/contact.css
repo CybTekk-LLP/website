@@ -102,7 +102,7 @@ textarea {
     outline: none;
     transition: all .3s;
     transition: all .3s;
-    cursor: url("../svg/Pointer.svg"), pointer;
+    cursor: url("./svg/Pointer.svg"), pointer;
 
 }
 
@@ -130,7 +130,7 @@ button:active {
 
 button:focus {
     outline: none;
-    cursor: url("../svg/Pointer.svg"), pointer;
+    cursor: url("./svg/Pointer.svg"), pointer;
 }
 
 button.ghost {
@@ -140,7 +140,7 @@ button.ghost {
 
 button:hover,
 .btn:hover {
-    cursor: url("../svg/Pointer.svg"), pointer;
+    cursor: url("./svg/Pointer.svg"), pointer;
 }
 
 .design-gradient {

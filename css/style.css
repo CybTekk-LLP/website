@@ -1570,7 +1570,7 @@ canvas {
     left: 0;
     width: 100%;
     z-index: -10;
-    background-image: url('../svg/underline.svg');
+    background-image: url('./svg/underline.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -1585,7 +1585,7 @@ canvas {
     left: 0;
     width: 100%;
     z-index: -10;
-    background-image: url('../svg/underline.svg');
+    background-image: url('./svg/underline.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);

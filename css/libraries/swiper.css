@@ -284,7 +284,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     height: var(--swiper-navigation-size);
     margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
     z-index: 10;
-    cursor: url(../../svg/Pointer.svg), pointer; */
+    cursor: url(././svg/Pointer.svg), pointer; */
     display: none;
     /* align-items: center;
     justify-content: center;
