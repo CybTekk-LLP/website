@@ -118,7 +118,7 @@ html.lenis {
 }
 
 .arrowSliding {
-    /* position: absolute; */
+
     -webkit-animation: slideCircle 4s linear infinite;
     animation: slideCircle 4s linear infinite;
 }
@@ -141,44 +141,44 @@ html.lenis {
 @-webkit-keyframes slideCircle {
     0% {
         opacity: 1;
-        /* transform: translateX(15vw); */
+
     }
 
     20% {
         opacity: 0.1;
-        /* transform: translateX(9vw); */
+
     }
 
     80% {
         opacity: 0.1;
-        /* transform: translateX(-9vw); */
+
     }
 
     100% {
         opacity: 1;
-        /* transform: translateX(-15vw); */
+
     }
 }
 
 @keyframes slideCircle {
     0% {
         opacity: 1;
-        /* transform: translateX(15vw); */
+
     }
 
     20% {
         opacity: 0.1;
-        /* transform: translateX(9vw); */
+
     }
 
     80% {
         opacity: 0.1;
-        /* transform: translateX(-9vw); */
+
     }
 
     100% {
         opacity: 1;
-        /* transform: translateX(-15vw); */
+
     }
 }
 
@@ -244,8 +244,8 @@ span.hide-on-phone {
     width: 100vw;
     left: 100%;
     transform: translateX(calc(-30vw - 200px));
-    /* border: 10px solid rgb(25, 25, 25); */
-    /* border-radius: 1000vh; */
+
+
     z-index: -1;
     background-image: url("data:image/svg+xml,%3Csvg width='1658' height='844' viewBox='0 0 1658 844' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='213' y='191' width='1211' height='449' rx='224.5' fill='%23191919'/%3E%3Crect x='111' y='95' width='1440' height='640' rx='320' stroke='%23191919' stroke-width='20'/%3E%3Crect x='10' y='10' width='1638' height='824' rx='412' stroke='%23191919' stroke-width='20'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ summary * {
 
 #menu .main-nav {
     -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
+
     scrollbar-width: none;
 }
 
@@ -1113,7 +1113,7 @@ canvas {
     border-radius: 30px;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
     mask-image: -webkit-radial-gradient(white, black);
-    /* fixes safari bug */
+
 
 }
 
@@ -1161,7 +1161,7 @@ canvas {
 
 @media screen and (orientation:portrait) {
 
-    /* tablet */
+
     .article-container {
         flex-direction: column;
     }
@@ -1230,7 +1230,7 @@ canvas {
     }
 
 
-    /* mobile */
+
     .hide-on-phone {
         display: none;
     }
@@ -1285,7 +1285,7 @@ canvas {
         width: 80vw;
         margin: auto;
         text-align: center;
-        /* changes */
+
     }
 
     .left-article {
@@ -1428,12 +1428,12 @@ canvas {
         text-align: left;
     }
 
-    /* .main-nav ul:first-child { */
+
     /* grid-template-rows: 1fr 1fr;
         grid-auto-flow: dense; */
     /* KEY RULE; deactive to see what happens without it;
                                       defaults to "sparse" (consecutive ordering) value */
-    /* } */
+
 
     /* .main-nav ul:nth-child(3n + 2) {
         grid-column: 1 / 3;
@@ -1555,7 +1555,7 @@ canvas {
     }
 }
 
-/***** The important stuff *****/
+
 .underline {
     position: relative;
 }
@@ -1593,15 +1593,15 @@ canvas {
 
 .swiper {
     -webkit-touch-callout: none;
-    /* iOS Safari */
+
     -webkit-user-select: none;
-    /* Safari */
+
     -khtml-user-select: none;
-    /* Konqueror HTML */
+
     -moz-: none;
-    /* Old versions of Firefox */
+
     -ms-user-select: none;
-    /* Internet Explorer/Edge */
+
     user-select: none;
     width: 100vw;
     align-items: center;

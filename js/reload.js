@@ -19,7 +19,6 @@ $(window).bind("resize", function (e) {
     window.matchMedia("(orientation: landscape)").matches &&
     window.innerWidth !== prevWidth
   ) {
-    this.location.reload(false); /* false to get page from cache */
-    /* true to fetch page from server */
+    this.location.reload(false);
   }
 });

@@ -59,7 +59,7 @@
   function o(t, e, i) {
     return Math.max(t, Math.min(e, i));
   }
-  var n = /*#__PURE__*/ (function () {
+  var n = (function () {
       function t() {}
       var e = t.prototype;
       return (
@@ -113,7 +113,7 @@
         t
       );
     })(),
-    s = /*#__PURE__*/ (function () {
+    s = (function () {
       function t(t) {
         var e,
           i,
@@ -179,7 +179,7 @@
         t
       );
     })(),
-    r = /*#__PURE__*/ (function () {
+    r = (function () {
       function t(t, e) {
         var i = this,
           n = e.wheelMultiplier,
@@ -298,7 +298,7 @@
         t
       );
     })(),
-    l = /*#__PURE__*/ (function () {
+    l = (function () {
       function t(t) {
         var e = this,
           o = void 0 === t ? {} : t,

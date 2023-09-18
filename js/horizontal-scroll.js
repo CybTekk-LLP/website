@@ -36,7 +36,6 @@ function slide_up(start, end) {
 }
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
-/* Main navigation */
 
 let panelsContainer = document.querySelector("#panels-container"),
   tween;
@@ -63,7 +62,6 @@ document.querySelectorAll(".anchor").forEach((anchor) => {
   });
 });
 
-/* Panels */
 const panels = gsap.utils.toArray("#panels-container .panel");
 tween = gsap.to(panels, {
   // xPercent: -100 * ( panels.length - 1 ),

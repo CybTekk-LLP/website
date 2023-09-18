@@ -34,13 +34,13 @@
     height: 3.5rem;
     width: auto;
     z-index: 4;
-    /* opacity: 0; */
+
     transition: all 0.5s ease-in-out;
     cursor: url(/svg/Pointer.svg) 16 16, pointer;
 }
 
 .logo img.is-active {
-    /* opacity: 1; */
+
     transition: all 0.5s ease-in-out;
 }
 
@@ -127,7 +127,7 @@ p.detail {
 
 .timeline ul li div {
     visibility: hidden;
-    /* opacity: 0; */
+
     transition: all 1.2s ease;
     transition-delay: 100ms;
     background: rgba(114, 114, 114, 0.1);
@@ -137,7 +137,7 @@ p.detail {
 }
 
 .timeline ul li div::before {
-    /* content: ""; */
+
     position: absolute;
     bottom: 7px;
     width: 0;
@@ -152,7 +152,7 @@ p.detail {
 .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    /* border-color: transparent rgba(114, 114, 114, 0.1) transparent transparent; */
+
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
@@ -164,7 +164,7 @@ p.detail {
 .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    /* border-color: transparent transparent transparent rgba(114, 114, 114, 0.1); */
+
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
@@ -173,7 +173,7 @@ p.detail {
 .timeline ul li.in-view div {
     transform: none;
     visibility: visible;
-    /* opacity: 1; */
+
     transition: all 1.2s ease;
     transition-delay: 500ms;
 }
@@ -196,7 +196,7 @@ p.detail {
 }
 
 .phone-animation img.shapes {
-    /* opacity: 0; */
+
     transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
@@ -204,7 +204,7 @@ p.detail {
 }
 
 .phone-animation img.appear {
-    /* opacity: 1; */
+
     transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
@@ -215,13 +215,13 @@ p.detail {
     padding-left: 40px;
     position: relative;
     top: 80px;
-    /* opacity: 0; */
+
     transition: all ease 0.5s;
 }
 
 .phone-animation .phone-animation-container.lift-up {
     top: 50px;
-    /* opacity: 1; */
+
 }
 
 .phone-animation .phone-animation-container .design-gradient {
@@ -244,13 +244,13 @@ p.detail {
 
     .timeline ul li:nth-child(even) div {
         left: -289px;
-        /*250+45-6*/
+
     }
 
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
-        /* border-color: transparent rgba(114, 114, 114, 0.1) transparent transparent; */
+
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
@@ -271,9 +271,7 @@ p.detail {
 }
 
 
-/* EXTRA/CLIP PATH STYLES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.timeline-clippy ul li::after {
+CLIP PATH STYLES –––––––––––––––––––––––––––––––––––––––––––––––––– */ .timeline-clippy ul li::after {
     width: 40px;
     height: 40px;
     border-radius: 0;
@@ -453,11 +451,11 @@ p.detail {
     }
 }
 
-/* Tablet and Phone */
+
 
 @media screen and (orientation:portrait) {
 
-    /* tablet */
+
     .iphone-frame {
         margin-top: 10vh;
     }
@@ -468,7 +466,7 @@ p.detail {
 }
 
 @media screen and (orientation:portrait) and (max-width:760px) {
-    /* Phone */
+
 
     .iphone-frame {
         margin-top: 15vh;
