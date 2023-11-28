@@ -942,7 +942,7 @@ canvas {
 }
 
 #about,
-#services,
+#solutions,
 #engagement,
 #industries,
 #products,
@@ -952,7 +952,7 @@ canvas {
     position: relative;
 }
 
-#services,
+#solutions,
 #engagement {
     margin-bottom: 10vh;
 }
@@ -963,9 +963,9 @@ canvas {
 
 #about h1,
 #about h4,
-#services h1,
-#services h4,
-#services h3,
+#solutions h1,
+#solutions h4,
+#solutions h3,
 #engagement h1,
 #engagement h4,
 #engagement h3,
@@ -986,7 +986,7 @@ canvas {
 }
 
 #industries h3,
-#services h3,
+#solutions h3,
 #engagement h3 {
     padding-bottom: 1rem;
     line-height: 1.6;
@@ -1007,7 +1007,7 @@ canvas {
     margin: 1rem;
 }
 
-#services .left-article button,
+#solutions .left-article button,
 #industries .left-article button,
 #engagement .left-article button,
 #proficiencies .left-article button,
@@ -1166,12 +1166,12 @@ canvas {
         flex-direction: column;
     }
 
-    #services .article-container,
+    #solutions .article-container,
     #engagement .article-container {
         flex-direction: column-reverse;
     }
 
-    #services .article-container .left,
+    #solutions .article-container .left,
     #engagement .article-container .left {
         float: right;
     }
@@ -1187,7 +1187,7 @@ canvas {
 
     }
 
-    #services .left-article button,
+    #solutions .left-article button,
     #engagement .left-article button,
     #industries .left-article button,
     #proficiencies .left-article button,
@@ -1199,7 +1199,7 @@ canvas {
         text-align: center;
     }
 
-    #services .left-article button {
+    #solutions .left-article button {
         padding-bottom: 16px;
         padding-top: 8px;
     }
@@ -1251,9 +1251,9 @@ canvas {
 
     #about h1,
     #about h4,
-    #services h1,
-    #services h4,
-    #services h3,
+    #solutions h1,
+    #solutions h4,
+    #solutions h3,
     #engagement h1,
     #engagement h4,
     #engagement h3,
@@ -1275,7 +1275,7 @@ canvas {
     }
 
     #industries h3,
-    #services h3,
+    #solutions h3,
     #engagement h3 {
         padding-bottom: 0.5rem;
     }
@@ -1393,7 +1393,7 @@ canvas {
         width: 320%;
     }
 
-    #services .left-article,
+    #solutions .left-article,
     #engagement .left-article {
         width: 450%;
     }
