@@ -33,6 +33,10 @@
     position: relative;
 }
 
+h4.number {
+    text-align: left;
+}
+
 #panel-1 {
     margin-left: 40vw;
 }
