@@ -947,6 +947,7 @@ canvas {
 #industries,
 #products,
 #proficiencies,
+#portfolio,
 #careers,
 #contact {
     position: relative;
@@ -976,6 +977,8 @@ canvas {
 #products h4,
 #proficiencies h1,
 #proficiencies h4,
+#portfolio h1,
+#portfolio h4,
 #careers h1,
 #careers h4,
 #contact h1,
@@ -1011,6 +1014,7 @@ canvas {
 #industries .left-article button,
 #explore-models .left-article button,
 #proficiencies .left-article button,
+#portfolio .left-article button,
 #products .left-article button,
 #careers .left-article button,
 #contact .left-article button {
@@ -1191,6 +1195,7 @@ canvas {
     #explore-models .left-article button,
     #industries .left-article button,
     #proficiencies .left-article button,
+    #portfolio .left-article button,
     #products .left-article button,
     #careers .left-article button,
     #contact .left-article button {
@@ -1264,6 +1269,8 @@ canvas {
     #products h4,
     #proficiencies h1,
     #proficiencies h4,
+    #portfolio h1,
+    #portfolio h4,
     #careers h1,
     #careers h4,
     #contact h1,
