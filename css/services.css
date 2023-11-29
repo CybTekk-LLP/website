@@ -558,3 +558,11 @@ button.stylam span {
 button.stylam {
     border-color: #e42c24;
 }
+
+button.stonetekk span {
+    color: #eeeeee;
+}
+
+button.stonetekk {
+    border-color: #eeeeee;
+}
