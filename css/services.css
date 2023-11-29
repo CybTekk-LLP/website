@@ -566,3 +566,11 @@ button.stonetekk span {
 button.stonetekk {
     border-color: #eeeeee;
 }
+
+button.proptekk span {
+    color: #4828a5;
+}
+
+button.proptekk {
+    border-color: #4828a5;
+}
