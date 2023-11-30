@@ -1552,6 +1552,11 @@ canvas {
     animation: 40s linear 0s infinite running reverse loading;
 }
 
+
+.keep-inline .big-img.portfolio {
+    background-image: url(../svg/logo-strip.svg);
+}
+
 @keyframes loading {
     0% {
         background-position: 0 0;
