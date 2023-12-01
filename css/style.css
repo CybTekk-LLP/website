@@ -1834,3 +1834,9 @@ h3.subtagline.email {
         transform: none;
     }
 }
+
+#subtitle {
+    font-size: 20px !important;
+    font-weight: lighter;
+    margin-top: calc(30vh + 5vw + 8rem);
+}
