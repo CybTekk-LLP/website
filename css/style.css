@@ -1843,3 +1843,10 @@ h3.subtagline.email {
     font-weight: lighter;
     margin-top: calc(30vh + 5vw + 8rem);
 }
+
+@media screen and (orientation: portrait) {
+
+    #subtitle.little-extra {
+        margin-top: calc(30vh + 1vw + 15rem);
+    }
+}
