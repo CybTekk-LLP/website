@@ -373,6 +373,40 @@
             </div>
         </div>
     </section>
+    <script>
+        document.getElementById("form-submit").addEventListener("click", (event) => {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Retrieve form values
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let message = document.getElementById("message").value;
+
+            // Construct the email subject and body
+            let subject = "Inquiry from " + name;
+            let body = "Name: " + name + "\n";
+            body += "Email: " + email + "\n";
+            body += "Phone: " + phone + "\n\n";
+            body += "Message: " + message;
+
+            // Encode subject and body for URL
+            subject = encodeURIComponent(subject);
+            body = encodeURIComponent(body);
+
+            // Construct the mailto URL
+            let mailtoLink = "mailto:hello@cybtekk.com" + "?subject=" + subject + "&body=" + body;
+
+            // Create a temporary link element to trigger the email client
+            let tempLink = document.createElement("a");
+            tempLink.href = mailtoLink;
+
+            // Trigger the click event on the temporary link
+            tempLink.click();
+        });
+
+    </script>
     <!-- <div class="map-container">
         <div id="map_canvas" class="map"></div>
     </div> -->
